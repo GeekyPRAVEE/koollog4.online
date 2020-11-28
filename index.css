@@ -95,7 +95,7 @@ header {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-
+  padding: 0px 30px;
   transition: all 0.3s ease 0s;
 }
 
@@ -146,7 +146,16 @@ header {
   transform: translate(-50%,-50%) scale(1);
   letter-spacing: initial;
 }
-
+.cta-contact-button {
+  margin-left: 19px;
+  padding: 10px 15px;
+  background-color: #F17015;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
 @media screen and (max-height: 450px) {
   .overlay a {
     font-size: 20px;
@@ -166,6 +175,10 @@ header {
   .menu {
     display: initial;
   }
+  header{
+    padding: 0px 0px;
+  }
+
 }
 /* <!-- header section ends--> */
 /* <!-- home section starts --> */
@@ -208,19 +221,27 @@ font-size: 1.5vw;
 
 @media only screen and (max-width: 800px) {
   .home{
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
+    font-weight: 500;
     width: 100%;
-    color:#0C37BA;
-    margin-left: auto;
-    margin-right: auto;
-    position:static;
+    color:black;  overflow: hidden;
     padding:20px 30px;
+    background-color: #dbf6e9;
   }
   .home-content{
     width: 100%;
     margin-top: 0px;
     position:static;
+
+  }
+  .cta-contact-button {
+    margin-left: 0px;
+    padding: 9px 20px;
+    background-color: #F17015;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
   }
   .home-content h2{
   padding: 10px 0px;
@@ -234,6 +255,7 @@ font-size: 1.5vw;
   margin-left: auto;
   margin-right: auto;
   font-size: 3.5vw;
+  padding-bottom: 25px;
   }
   .home-img img{
    width: 100%;
@@ -245,12 +267,9 @@ font-size: 1.5vw;
   }
 }
 /* application section starts */
-/* .title{
-padding-top: 55px;
-padding-bottom: 30px;
-} */
+
 .applications{
-  padding : 5px 0px;
+  padding : 50px 0px;
   background-color:#dbf6e9;
 }
 .title{
