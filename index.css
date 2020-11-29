@@ -311,7 +311,7 @@ font-size: 1.5vw;
   }
   .home-img img{
    width: 100%;
-   height: 400px;
+   height: 350px;
    float: none;
    margin-left: auto;
    margin-right: auto;
@@ -365,7 +365,7 @@ font-size: 1.5vw;
 }
 .app-img img{
   width: 100%;
-  height: 50%;
+  height: 300px;
   max-height: 200px;
 
   border-radius: 10px;
@@ -403,7 +403,6 @@ cursor: pointer;
   }
   .app-card{
     width: 90%;
-
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -423,7 +422,6 @@ cursor: pointer;
     width: 100%;
     height: 30%;
     max-height: 200px;
-
     border-radius: 10px;
     margin-bottom: 10px;
   }
@@ -445,6 +443,7 @@ cursor: pointer;
   margin-left: auto;
   margin-right: auto;
   background-color: #dbf6e9;
+  margin-bottom: 0px;
 }
 .platform-main{
   width: 92%;
@@ -455,6 +454,7 @@ cursor: pointer;
 }
 
 .platform-card{
+  width: 90%;
   margin: 20px;
   padding: 20px;
   margin-left: auto;
@@ -551,9 +551,10 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
     margin-left: auto;
     margin-right: auto;
     background-color: #dbf6e9;
+    padding-bottom: 15px;
   }
   .platform-main{
-    width: 92%;
+    width: 90%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -645,15 +646,16 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
   box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
   } */
   .platform{
-    width: 92%;
+    width: 93%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     background-color: #dbf6e9;
   }
   .platform-cards{
-    width: 100%;
-    margin: 20px;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 0px;
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -695,6 +697,7 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
 padding-top: 40px;
 padding-bottom: 20px;
   background-color: #dbf6e9;
+  margin-top: 0px;
 }
 .contact{
 width: 92%;
@@ -737,13 +740,13 @@ height: 500px;
   background-color: #F8F8F8;
   color: black;
   padding: 20px;
-  margin: 30px;
+  margin: 0px 60px;
   border-radius: 20px;
   box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
 }
 input{
     padding: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     background: transparent;
     border: none;
     border-bottom: 1px solid black;
