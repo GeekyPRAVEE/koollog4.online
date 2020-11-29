@@ -15,3 +15,10 @@ menuClose.addEventListener("click", () => {
 closeoverlay.addEventListener("click", () => {
   overlay.classList.remove("overlay--active");
 });
+$(document).ready(function(){
+// toggle menu/navbar script
+    $('.menu-btn').click(function(){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    });
+  });
