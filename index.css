@@ -202,6 +202,7 @@ header {
     height: 70px;
     align-items: center;
   }
+
   .navbar{
     width: 100%;
     margin-left: auto;
@@ -310,7 +311,7 @@ font-size: 1.5vw;
   }
   .home-img img{
    width: 100%;
-   height: auto;
+   height: 400px;
    float: none;
    margin-left: auto;
    margin-right: auto;
