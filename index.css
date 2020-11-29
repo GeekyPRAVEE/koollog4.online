@@ -241,7 +241,8 @@ header {
   width: 100%;
   color:black;  overflow: hidden;
   padding:0px 50px;
-  background-color: #dbf6e9;
+  /* background-color: #8BA8FF; */
+  background-color: #8BA8FF;
 }
 .home-content{
   width: 45%;
@@ -277,7 +278,7 @@ font-size: 1.5vw;
     width: 100%;
     color:black;  overflow: hidden;
     padding:20px 30px;
-    background-color: #dbf6e9;
+    background-color: #8BA8FF;
   }
   .home-content{
     width: 100%;
@@ -322,7 +323,7 @@ font-size: 1.5vw;
 
 .applications{
   padding : 50px 0px;
-  background-color:#dbf6e9;
+  background-color:#8BA8FF;
 }
 .title{
   color: #004cfc;
@@ -340,7 +341,7 @@ font-size: 1.5vw;
   margin-left: auto;
   margin-right: auto;
   font-size: 1.2vw;
-  background-color:#dbf6e9;
+  background-color:#8BA8FF;
 }
 .appliaction{
   font-size: 1.1vw;
@@ -396,7 +397,7 @@ cursor: pointer;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.2vw;
-    background-color:#dbf6e9;
+    background-color:#8BA8FF;
   }
   .appliaction{
     font-size: 1.1vw;
@@ -442,7 +443,7 @@ cursor: pointer;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #dbf6e9;
+  background-color: #8BA8FF;
   margin-bottom: 0px;
 }
 .platform-main{
@@ -450,11 +451,11 @@ cursor: pointer;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  background-color: #dbf6e9;
+  background-color: #8BA8FF;
 }
 
 .platform-card{
-  width: 90%;
+  width: 100%;
   margin: 20px;
   padding: 20px;
   margin-left: auto;
@@ -498,7 +499,7 @@ cursor: pointer;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  background-color: #dbf6e9;
+  background-color: #8BA8FF;
 }
 .platform-cards{
   width: 22%;
@@ -550,7 +551,7 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: #dbf6e9;
+    background-color: #8BA8FF;
     padding-bottom: 15px;
   }
   .platform-main{
@@ -558,10 +559,11 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    background-color: #dbf6e9;
+    background-color: #8BA8FF;
   }
 
   .platform-card{
+    width: 93%;
     margin: 20px;
     padding: 20px;
     margin-left: auto;
@@ -574,7 +576,6 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
     color: black;
     width: 100%;
     font-size: 3vw;
-
   }
   .platform-content h3{
     padding: 10px;
@@ -606,7 +607,7 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: #dbf6e9;
+    background-color: #8BA8FF;
   }
   .platform-cards{
     width: 100%;
@@ -650,7 +651,7 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: #dbf6e9;
+    background-color: #8BA8FF;
   }
   .platform-cards{
     width: 90%;
@@ -696,7 +697,7 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
 .contact-section{
 padding-top: 40px;
 padding-bottom: 20px;
-  background-color: #dbf6e9;
+  background-color: #8BA8FF;
   margin-top: 0px;
 }
 .contact{
@@ -782,7 +783,7 @@ textarea{
   .contact-section{
   padding-top: 40px;
   padding-bottom: 20px;
-  background-color: #dbf6e9;
+  background-color: #8BA8FF;
   }
   .contact{
   width: 92%;
@@ -835,7 +836,7 @@ textarea{
   }
   input{
       padding: 10px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       background: transparent;
       border: none;
       border-bottom: 1px solid black;
@@ -874,7 +875,7 @@ textarea{
 /* contact section ends */
 /* footer section starts */
 .footer{
-  background-color: #dbf6e9;
+  background-color: #8BA8FF;
 }
 .footer-card{
 width: 92%;
@@ -903,7 +904,7 @@ padding: 30px 20px;
 }
 @media only screen and (max-width: 800px) {
   .footer{
-    background-color: #dbf6e9;
+    background-color: #8BA8FF;
   }
   .footer-card{
   width: 92%;
