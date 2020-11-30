@@ -192,7 +192,7 @@ header {
     right: 0;
     left: 0;
     width: 60%;
-    margin-left: 20%;
+    margin-left: 18%;
   }
   .logo img{
     display: flex;
@@ -241,8 +241,8 @@ header {
   width: 100%;
   color:black;  overflow: hidden;
   padding:0px 50px;
-  /* background-color: #4285F4; */
-  background-color: #4285F4;
+  /* background-color: #54e346; */
+  background-color: #54e346;
 }
 .home-content{
   width: 45%;
@@ -256,13 +256,14 @@ top:100px;
 margin-top: 70px;
 margin-left: 20px;
 font-size: 1.8vw;
-color: #FF6F00;
+color: #FFf;
 }
 .home-content p{
 padding: 0px 0px;
 padding-bottom: 30px;
 margin-left: 20px;
 font-size: 1.5vw;
+opacity: 0.9;
 color: white;
 }
 .home-img img{
@@ -279,7 +280,7 @@ color: white;
     width: 100%;
     color:black;  overflow: hidden;
     padding:20px 30px;
-    background-color: #4285F4;
+    background-color: #54e346;
   }
   .home-content{
     width: 100%;
@@ -303,12 +304,14 @@ color: white;
   margin-left: auto;
   margin-top: 5px;
   margin-right: auto;
+  color: #FF6F00;
   }
   .home-content p{
   padding: 0px 0px;
   margin-left: auto;
   margin-right: auto;
   font-size: 3.5vw;
+  color: #fff;
   padding-bottom: 25px;
   }
   .home-img img{
@@ -324,7 +327,7 @@ color: white;
 
 .applications{
   padding : 50px 0px;
-  background-color:#4285F4;
+  background-color:#54e346;
 }
 .title{
   color: #FF6F00;
@@ -342,7 +345,7 @@ color: white;
   margin-left: auto;
   margin-right: auto;
   font-size: 1.2vw;
-  background-color:#4285F4;
+  background-color:#54e346;
 }
 .appliaction{
   font-size: 1.1vw;
@@ -398,7 +401,7 @@ cursor: pointer;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.2vw;
-    background-color:#4285F4;
+    background-color:#54e346;
   }
   .appliaction{
     font-size: 1.1vw;
@@ -442,7 +445,7 @@ cursor: pointer;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #4285F4;
+  background-color: #54e346;
   margin-bottom: 0px;
 }
 .platform-main{
@@ -450,7 +453,7 @@ cursor: pointer;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  background-color: #4285F4;
+  background-color: #54e346;
 }
 
 .platform-card{
@@ -499,7 +502,7 @@ cursor: pointer;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  background-color: #4285F4;
+  background-color: #54e346;
 }
 .platform-cards{
   width: 22%;
@@ -551,7 +554,7 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: #4285F4;
+    background-color: #54e346;
     padding-bottom: 15px;
   }
   .platform-main{
@@ -559,7 +562,7 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    background-color: #4285F4;
+    background-color: #54e346;
   }
 
   .platform-card{
@@ -607,7 +610,7 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: #4285F4;
+    background-color: #54e346;
   }
   .platform-cards{
     width: 100%;
@@ -651,7 +654,7 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: #4285F4;
+    background-color: #54e346;
   }
   .platform-cards{
     width: 90%;
@@ -697,7 +700,7 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
 .contact-section{
 padding-top: 40px;
 padding-bottom: 20px;
-  background-color: #4285F4;
+  background-color: #54e346;
   margin-top: 0px;
 }
 .contact{
@@ -803,7 +806,7 @@ textarea{
   .contact-section{
   padding-top: 40px;
   padding-bottom: 20px;
-  background-color: #4285F4;
+  background-color: #54e346;
   }
   .contact{
   width: 92%;
@@ -912,7 +915,7 @@ background-color: #fff;
 /* contact section ends */
 /* footer section starts */
 .footer{
-  background-color: #4285F4;
+  background-color: #54e346;
 }
 .footer-card{
 width: 92%;
@@ -941,7 +944,7 @@ padding: 30px 20px;
 }
 @media only screen and (max-width: 800px) {
   .footer{
-    background-color: #4285F4;
+    background-color: #54e346;
   }
   .footer-card{
   width: 92%;
