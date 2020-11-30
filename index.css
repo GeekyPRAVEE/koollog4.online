@@ -241,8 +241,8 @@ header {
   width: 100%;
   color:black;  overflow: hidden;
   padding:0px 50px;
-  /* background-color: #54e346; */
-  background-color: #54e346;
+  /* background-color: #aee6e6; */
+  background-color: #aee6e6;
 }
 .home-content{
   width: 45%;
@@ -256,7 +256,7 @@ top:100px;
 margin-top: 70px;
 margin-left: 20px;
 font-size: 1.8vw;
-color: #FFf;
+color: #002276;
 }
 .home-content p{
 padding: 0px 0px;
@@ -264,7 +264,7 @@ padding-bottom: 30px;
 margin-left: 20px;
 font-size: 1.5vw;
 opacity: 0.9;
-color: white;
+color: black;
 }
 .home-img img{
   float: right;
@@ -280,7 +280,7 @@ color: white;
     width: 100%;
     color:black;  overflow: hidden;
     padding:20px 30px;
-    background-color: #54e346;
+    background-color: #aee6e6;
   }
   .home-content{
     width: 100%;
@@ -304,14 +304,14 @@ color: white;
   margin-left: auto;
   margin-top: 5px;
   margin-right: auto;
-  color: #FF6F00;
+
   }
   .home-content p{
   padding: 0px 0px;
   margin-left: auto;
   margin-right: auto;
   font-size: 3.5vw;
-  color: #fff;
+
   padding-bottom: 25px;
   }
   .home-img img{
@@ -327,7 +327,7 @@ color: white;
 
 .applications{
   padding : 50px 0px;
-  background-color:#54e346;
+  background-color:#aee6e6;
 }
 .title{
   color: #FF6F00;
@@ -345,7 +345,7 @@ color: white;
   margin-left: auto;
   margin-right: auto;
   font-size: 1.2vw;
-  background-color:#54e346;
+  background-color:#aee6e6;
 }
 .appliaction{
   font-size: 1.1vw;
@@ -401,7 +401,7 @@ cursor: pointer;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.2vw;
-    background-color:#54e346;
+    background-color:#aee6e6;
   }
   .appliaction{
     font-size: 1.1vw;
@@ -445,7 +445,7 @@ cursor: pointer;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #54e346;
+  background-color: #aee6e6;
   margin-bottom: 0px;
 }
 .platform-main{
@@ -453,7 +453,7 @@ cursor: pointer;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  background-color: #54e346;
+  background-color: #aee6e6;
 }
 
 .platform-card{
@@ -502,7 +502,7 @@ cursor: pointer;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  background-color: #54e346;
+  background-color: #aee6e6;
 }
 .platform-cards{
   width: 22%;
@@ -554,7 +554,7 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: #54e346;
+    background-color: #aee6e6;
     padding-bottom: 15px;
   }
   .platform-main{
@@ -562,7 +562,7 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    background-color: #54e346;
+    background-color: #aee6e6;
   }
 
   .platform-card{
@@ -610,7 +610,7 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: #54e346;
+    background-color: #aee6e6;
   }
   .platform-cards{
     width: 100%;
@@ -654,7 +654,7 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color: #54e346;
+    background-color: #aee6e6;
   }
   .platform-cards{
     width: 90%;
@@ -700,7 +700,7 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
 .contact-section{
 padding-top: 40px;
 padding-bottom: 20px;
-  background-color: #54e346;
+  background-color: #aee6e6;
   margin-top: 0px;
 }
 .contact{
@@ -806,7 +806,7 @@ textarea{
   .contact-section{
   padding-top: 40px;
   padding-bottom: 20px;
-  background-color: #54e346;
+  background-color: #aee6e6;
   }
   .contact{
   width: 92%;
@@ -915,7 +915,7 @@ background-color: #fff;
 /* contact section ends */
 /* footer section starts */
 .footer{
-  background-color: #54e346;
+  background-color: #aee6e6;
 }
 .footer-card{
 width: 92%;
@@ -944,7 +944,7 @@ padding: 30px 20px;
 }
 @media only screen and (max-width: 800px) {
   .footer{
-    background-color: #54e346;
+    background-color: #aee6e6;
   }
   .footer-card{
   width: 92%;
