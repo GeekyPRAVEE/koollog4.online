@@ -280,7 +280,9 @@ color: #ECECEC;
     font-weight: 500;
     width: 100%;
     color:black;  overflow: hidden;
-    padding:50px 30px;
+    padding:50px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .home-content{
     width: 100%;
@@ -398,7 +400,7 @@ border-radius: 20px;
   border-radius: 20px;
   }
   .about-koollog{
-    padding: 0px 20px;
+    padding: 0px 15px;
     font-size: 1.1vw;
     display: block;
     width: 100%;
@@ -407,7 +409,7 @@ border-radius: 20px;
   }
   .koollog-webapp{
   width: 100%;
-  padding: 0px 10px;
+  padding: 0px 0px;
   }
   .koollog-webapp img{
     width : 100%;
@@ -415,7 +417,7 @@ border-radius: 20px;
   padding: 10px;
   }
   .aboutus{
-  padding: 10px;
+  padding: 10px 0px;
   width : 100%;
   float: none;
   font-size: 3vw;
