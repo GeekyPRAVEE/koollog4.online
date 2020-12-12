@@ -125,12 +125,6 @@ transform: matrix(1, 0, 0, -1, 0, 0);
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
 @media only screen and (max-width: 800px) {
-  .overlay__content a {
-    font-weight: 500;
-    color:#FF6F00;
-    text-decoration: none;
-    font-size: 2vw;
-  }
   .cta{
     margin-left: 0px;
     font-size: 2vw;
@@ -141,7 +135,7 @@ transform: matrix(1, 0, 0, -1, 0, 0);
   .nav__links li a {
     transition: all 0.3s ease 0s;
     padding: 5px 5px;
-    font-size: 2vw;
+    font-size: 3vw;
   }
   .menu {
     display: initial;
