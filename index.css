@@ -14,11 +14,9 @@ body{
 margin-left: auto;
 margin-right: auto;
 padding: 0;
-/* max-width: 1400px; */
 background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%);
 }
 /* HEADER */
-
 .top-nav{
   width: 100%;
   display: flex;
@@ -26,7 +24,6 @@ background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%
   background-color: #fff;
   padding:3px 5%;
   z-index: 999;
-  /* background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%); */
   background-color: #41A6F6;
   background-color: #FF700C;
 }
@@ -40,16 +37,13 @@ background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%
 .top-nav ul li img{
   width: 40px;
   height: 40px;
-  /* box-shadow: 0px 1px 15px rgba(59, 174, 250, 0.4);
-  box-shadow: 3px 2px 6px rgba(0,0,0,.29); */
   border-radius: 100px;
 }
 .login{
-
 width: 100px;
 height: 40px;
 position: absolute;
-left: 90%;
+right: 5%;
 }
 .login img{
   float: right;
@@ -62,14 +56,13 @@ header {
   padding: 5px 10px;
   background-color: #fff;
   -moz-box-shadow:    3px 3px 5px 6px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
-    box-shadow:         3px 3px 10px 2px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 10px 2px #ccc;
   width: 100%;
   padding:0px 5%;
   position: fixed;
   top:43px;
   z-index: 999;
-
 }
 .logo {
   margin-right: auto;
@@ -81,7 +74,6 @@ header {
 .nav__links {
   list-style: none;
   display: flex;
-  margin-right: auto;
 }
 .nav__links a,
 .cta,
@@ -124,18 +116,25 @@ transform: matrix(1, 0, 0, -1, 0, 0);
   box-shadow: 0px 0px 20px rgba(255, 111, 0, 0.5);
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (min-device-width : 641px) and (max-device-width : 1024px) {
   .cta{
     margin-left: 0px;
     font-size: 2vw;
   }
+  .nav__links{
+    width: 90%;
+  }
   .nav__links li {
-    padding: 0px 5px;
+    padding: 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .nav__links li a {
     transition: all 0.3s ease 0s;
     padding: 5px 5px;
-    font-size: 3vw;
+    font-size: 1.5rem;
+    float: right;
+    text-align: center;
   }
   .menu {
     display: initial;
@@ -152,20 +151,19 @@ transform: matrix(1, 0, 0, -1, 0, 0);
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
-    height: 70px;
+    width: 280px;
+    height: 80px;
     align-items: center;
   }
   .navbar{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0px 20px;
+    padding: 0px 0px;
     padding-top: 5px;
     padding-bottom: 15px;
     background-color: #fff;
     display: flex;
-    position: fixed;
     justify-content: center;
     top: 70px;
     right: 0;
@@ -178,7 +176,7 @@ transform: matrix(1, 0, 0, -1, 0, 0);
       padding: 5px 10px;
       background-color: #fff;
       width: 100%;
-      padding:0px 5%;
+      padding:0px 10px;
       position: fixed;
       z-index: 999;
       top:0px;
@@ -192,26 +190,120 @@ transform: matrix(1, 0, 0, -1, 0, 0);
     background-color: #fff;
     padding: 0px 3%;
     z-index: 999;
-    /* background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%); */
-    background-color: #41A6F6;
     background-color: #FF700C;
   }
   .top-nav ul{
 
   }
   .top-nav ul li{
-      display: inline;
+    display: inline;
     padding: 0px 5px;
   }
   .top-nav ul li img{
     width: 30px;
     height: 30px;
-    /* box-shadow: 0px 1px 15px rgba(59, 174, 250, 0.4);
-    box-shadow: 3px 2px 6px rgba(0,0,0,.29); */
     border-radius: 100px;
   }
   .login{
+  width: 90px;
+  height: 30px;
+  position: absolute;
+  left: 75%;
+  }
+  .login img{
+    float: right;
+    width: 15px;
+  }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width :640px) {
+  .cta{
+    margin-left: 0px;
+    font-size: 2vw;
+  }
+  .nav__links{
+    width: 100%;
+  }
+  .nav__links li {
+    padding: 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav__links li a {
+    transition: all 0.3s ease 0s;
+    padding: 5px 5px;
+    font-size: 3.5vw;
+    float: right;
+    text-align: center;
+  }
+  .menu {
+    display: initial;
+  }
+  .logo{
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 60%;
+    margin-left: 18%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    height: 51px;
+    align-items: center;
+  }
+  .navbar{
+    width: 100%;
+    padding: 0px 10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    top: 70px;
+    right: 0;
+    left: 0;
+    font-size: .8rem;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
+  }
+  header{
+      font-size: 14px;
+      padding: 5px 10px;
+      background-color: #fff;
+      width: 100%;
+      padding:0px 0px;
+      position: fixed;
+      z-index: 999;
+      top:0px;
+      display: block;
+      box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.25);
+  }
+  .top-nav{
+    width: 100%;
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    padding: 0px 3%;
+    z-index: 999;
+    background-color: #FF700C;
+  }
+  .top-nav ul{
 
+  }
+  .top-nav ul li{
+    display: inline;
+    padding: 0px 5px;
+  }
+  .top-nav ul li img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+  }
+  .login{
   width: 90px;
   height: 30px;
   position: absolute;
@@ -228,18 +320,19 @@ transform: matrix(1, 0, 0, -1, 0, 0);
 .home{
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   color:black;  overflow: hidden;
   padding:0px 50px;
   padding-bottom: 100px;
   background: rgb(0,116,189);
   background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%);
+  margin-top:2%;
 }
 .home-content{
-  width: 50%;
-  margin-top: 15%;
-
+  width: 40vw;
+  margin-top: 18%;
+  vertical-align: middle;
 }
 .home-content h1{
 font-weight: bolder;
@@ -247,7 +340,6 @@ padding: 5px 0px;
 margin-top: 80px;
 margin-left: 20px;
 font-size:2.3vw;
-
 color: #fff;
 }
 .home-content h4{
@@ -266,11 +358,18 @@ margin-left: 20px;
 font-size: 1.3vw;
 color: #ECECEC;
 }
+.home-img{
+  width: 45vw;
+  float: right;
+  margin-top: 5%;
+}
 .home-img img{
   float: right;
-  width: 47%;
-  height: 35%;
-  margin-top: 10%;
+  width: 100%;
+  height: 45%;
+  width: 45vw;
+  height: 80Vh;
+  margin-right: 5%;
 }
 .play{
   padding : 0px 0px;
@@ -312,15 +411,68 @@ color: #ECECEC;
   text-decoration: none;
   cursor: pointer;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (min-device-width : 1025px) and (max-device-width : 1360px) {
+  .home{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 100vw;
+    height: 100vh;
+    color:black;  overflow: hidden;
+    padding:0px 50px;
+    padding-bottom: 100px;
+    background: rgb(0,116,189);
+    background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%);
+    margin-top:2%;
+  }
+  .home-content{
+    width: 45%;
+    margin-top: 20%;
+    vertical-align: middle;
+  }
+  .home-content h1{
+  font-weight: bolder;
+  padding: 5px 0px;
+  margin-top: 80px;
+  margin-left: 20px;
+  font-size:2.3vw;
+  color: #fff;
+  }
+  .home-content h4{
+  padding: 10px 0px;
+  margin-top: 0px;
+  margin-left: 20px;
+  font-size: 1.7vw;
+
+  color: #fff;
+  }
+  .home-content p{
+  padding: 0px 0px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  margin-left: 20px;
+  font-size: 1.3vw;
+  color: #ECECEC;
+  }
+  .home-img{
+    width: 48%;
+    float: right;
+    margin-top: 8%;
+  }
+  .home-img img{
+    float: right;
+    width: 100%;
+    height: 70vh;
+  }
+}
+@media only screen and (min-device-width : 641px) and (max-device-width : 1024px) {
   .home{
     font-weight: 500;
     width: 100%;
     color:black;  overflow: hidden;
     padding:50px 15px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
-    height: 100vh;
+    height: 100%;
   }
   .home-content{
     width: 100%;
@@ -360,15 +512,84 @@ color: #ECECEC;
 
   padding-bottom: 25px;
   }
+  .home-img{
+    width: 48%;
+    float: right;
+    margin-top: 10%;
+  }
   .home-img img{
    width: 100%;
    height: 70vw;
    float: none;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 50px;
+   margin-top: 30px;
   }
 }
+@media only screen and (min-device-width : 320px) and (max-device-width :640px){
+  .home{
+    font-weight: 500;
+    width: 100%;
+    color:black;  overflow: hidden;
+    padding:50px 15px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    height: 100%;
+    display: block;
+  }
+  .home-content{
+    width: 90vw;
+    margin-top: 0px;
+    display: inline-block;
+  }
+  .cta-contact-button {
+    margin-left: 0px;
+    padding: 9px 10px;
+    background-color: #FF6F00;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  .home-content h1{
+  padding: 5px 0px;
+  font-size: 5vw;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-right: auto;
+  }
+  .home-content h4{
+    padding-top: 0px;
+    padding-bottom: 10px;
+  margin-top: 0px;
+  margin-left: 0px;
+  font-size: 4.5vw;
+  color: #fff;
+  }
+  .home-content p{
+  padding: 0px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3.5vw;
+
+  padding-bottom: 25px;
+  }
+  .home-img{
+    width:100%;
+    float: inherit;
+    margin-top: 10%;
+  }
+  .home-img img{
+   width: 90vw;
+   height: 90vw;
+   float: inherit;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 20px;
+  }
+}
+/* HOME SECTION ENDS */
 /* about us section starts */
 .about-koollog{
     padding: 0px 30px;
@@ -603,8 +824,8 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 .feature-img img{
   width: 49%;
-  max-width: 500px;
-  max-height: 450px;
+  /* max-width: 500px;
+  max-height: 450px; */
   float: left;
   padding: 20px;
   margin-left: 5%;
@@ -620,7 +841,6 @@ position: relative;
   float: right;
 }
 .feature-img1 img{
-  max-height: 400px;
   padding: 10px 0px;
    float: right;
   margin-right: 10%;
@@ -660,15 +880,19 @@ padding: 80px 30px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   padding-top: 10px;
   }
+.feature-img{
+  width: 100%;
+  display: block;
+}
   .feature-img img{
-    width: 90%;
-    float: left;
-    padding-top: 10px;
-    padding: 30px 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 30px;
+
   }
   .feature-des{
   width: 100%;
-  float: none;
   padding: 0px 20px;
   position: relative;
   padding-bottom: 15px;
@@ -680,7 +904,7 @@ padding: 80px 30px;
   .feature-img1 img{
     width: 100%;
     float: none;
-    padding: 10px 20px;
+    padding: 30px 30px;
   }
   .feature-des1{
     width: 100%;
@@ -762,7 +986,6 @@ cursor: pointer;
 .applications{
   padding : 50px 0px;
   width: 100%;
-
   margin-left: auto;
   margin-right: auto;
   background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255));
@@ -788,6 +1011,7 @@ cursor: pointer;
   flex-direction: row;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 0px;
 }
 .appliaction{
   font-size: 1.1vw;
@@ -871,9 +1095,8 @@ cursor: pointer;
   .app-img img{
     width: 100%;
     height: 100%;
-    width:200px;
     height: 150px;
-
+    width: 150px;
     max-height: 200px;
     border-radius: 10px;
     margin-bottom: 10px;
