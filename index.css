@@ -16,6 +16,23 @@ margin-right: auto;
 padding: 0;
 background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%);
 }
+.loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    animation: rotate .5s linear infinite;
+    border-top: 3px solid #3c6aff;
+    z-index: 999999999999;
+}
+@keyframes rotate {
+100% {
+    transform: rotate(360deg);
+    }
+}
 /* HEADER */
 .top-nav{
   width: 100%;
@@ -119,7 +136,7 @@ transform: matrix(1, 0, 0, -1, 0, 0);
 @media only screen and (min-device-width : 641px) and (max-device-width : 1024px) {
   .cta{
     margin-left: 0px;
-    font-size: 2vw;
+    font-size: 3vw;
   }
   .nav__links{
     width: 90%;
@@ -314,9 +331,9 @@ transform: matrix(1, 0, 0, -1, 0, 0);
     width: 15px;
   }
 }
-/* <!-- header section ends--> */
+/* <!--HEADER SECTION ENDS--> */
 
-/* <!-- home section starts --> */
+/* <!-- HOME SECTION STARTS--> */
 .home{
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -331,7 +348,7 @@ transform: matrix(1, 0, 0, -1, 0, 0);
 }
 .home-content{
   width: 40vw;
-  margin-top: 18%;
+  margin-top: 23vh;
   vertical-align: middle;
 }
 .home-content h1{
@@ -346,8 +363,7 @@ color: #fff;
 padding: 10px 0px;
 margin-top: 0px;
 margin-left: 20px;
-font-size: 1.7vw;
-
+font-size: 2.7vw;
 color: #fff;
 }
 .home-content p{
@@ -388,7 +404,6 @@ color: #ECECEC;
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
 /* Modal Content */
 .modal-content {
   margin: auto;
@@ -396,7 +411,6 @@ color: #ECECEC;
   width: 80%;
   height: 30%;
 }
-
 /* The Close Button */
 .close {
   color: #aaaaaa;
@@ -404,7 +418,6 @@ color: #ECECEC;
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: #000;
@@ -442,7 +455,6 @@ color: #ECECEC;
   margin-top: 0px;
   margin-left: 20px;
   font-size: 1.7vw;
-
   color: #fff;
   }
   .home-content p{
@@ -470,14 +482,15 @@ color: #ECECEC;
     width: 100%;
     color:black;  overflow: hidden;
     padding:50px 15px;
-    margin-top: 40px;
+    margin-top: 0px;
     margin-bottom: 20px;
     height: 100%;
+    display: block;
   }
   .home-content{
-    width: 100%;
+    width: 97vw;
     margin-top: 0px;
-    position:static;
+    display: inline-block;
   }
   .cta-contact-button {
     margin-left: 0px;
@@ -491,17 +504,17 @@ color: #ECECEC;
   }
   .home-content h1{
   padding: 5px 0px;
-  font-size: 5vw;
+  font-size: 5.2vw;
   margin-left: auto;
   margin-top: 5px;
   margin-right: auto;
   }
   .home-content h4{
-    padding-top: 0px;
-    padding-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 10px;
   margin-top: 0px;
   margin-left: 0px;
-  font-size: 4.5vw;
+  font-size: 5vw;
   color: #fff;
   }
   .home-content p{
@@ -509,21 +522,20 @@ color: #ECECEC;
   margin-left: auto;
   margin-right: auto;
   font-size: 3.5vw;
-
   padding-bottom: 25px;
   }
   .home-img{
-    width: 48%;
-    float: right;
+    width:100%;
+    float: none;
     margin-top: 10%;
   }
   .home-img img{
-   width: 100%;
-   height: 70vw;
-   float: none;
+   width: 95vw;
+   height: 90vw;
+   float: inherit;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 30px;
+   margin-top: 20px;
   }
 }
 @media only screen and (min-device-width : 320px) and (max-device-width :640px){
@@ -590,14 +602,11 @@ color: #ECECEC;
   }
 }
 /* HOME SECTION ENDS */
-/* about us section starts */
+/* ABOUT US SECTION STARTS */
 .about-koollog{
-    padding: 0px 30px;
-
+  padding: 0px 30px;
   padding-bottom: 20px;
   font-size: 1.1vw;
-  /* background: rgb(0,116,189); */
-  /* background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%); */
   display: flex;
   width: 100%;
   margin-left: auto;
@@ -608,7 +617,7 @@ width: 55%;
 padding: 50px 20px;
 }
 .koollog-webapp img{
-  width : 100%;
+width : 100%;
 float: left;
 padding: 10px;
 }
@@ -640,7 +649,6 @@ font-size: 1rem;
 .aboutus-heading h4{
   padding-top: 13px;
   vertical-align: middle;
-
 }
 .aboutus-card p{
   padding-left: 37px;
@@ -652,7 +660,7 @@ float: left;
 padding: 0px 0px;
 border-radius: 20px;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (min-device-width : 320px) and (max-device-width :640px){
   iframe{
   width : 100%;
   height: 300px;
@@ -663,6 +671,7 @@ border-radius: 20px;
   .about-koollog{
     padding: 0px 15px;
     font-size: 1.1vw;
+    color: #fff;
     display: block;
     width: 100%;
     margin-left: auto;
@@ -709,11 +718,9 @@ font-size: 3vw;
     padding-left: 37px;
   }
 }
-/* about us section ends */
-/* why koollog starts */
+/* ABOUT US SECTION ENDS */
+/*WHY KOOLLOG STARTS */
 .whykoollog{
-  /* background: rgb(0,116,189); */
-  /* background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%); */
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -724,7 +731,6 @@ font-size: 3vw;
 }
 .why{
   width: 28.44%;
-
   background-color: #fff;
   border-radius: 25px;
   padding: 20px 30px;
@@ -792,7 +798,7 @@ font-size: 3vw;
     width: 80%;
   }
 }
-/* why koollog ends*/
+/* WHY KOOLLOG ENDS*/
 /* features section starts */
 .features{
   font-size: 1.1vw;
@@ -800,17 +806,13 @@ font-size: 3vw;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-
-  /* background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%); */
   padding-bottom: 50px;
-
 }
 .feature h4{
   padding: 10px 0px;
   color: #004cfc;
   font-size: 1.3vw;
   font-weight: 700;
-
 }
 .feature{
 width :92%;
@@ -824,8 +826,8 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 .feature-img img{
   width: 49%;
-  /* max-width: 500px;
-  max-height: 450px; */
+   max-width: 500px;
+  max-height: 450px;
   float: left;
   padding: 20px;
   margin-left: 5%;
@@ -844,6 +846,8 @@ position: relative;
   padding: 10px 0px;
    float: right;
   margin-right: 10%;
+  max-width: 500px;
+ max-height: 450px;
 }
 .feature-des1{
   width: 50%;

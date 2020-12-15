@@ -23,20 +23,13 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-2
-3
-4
-5
-6
-7
-8
-9
-// Code By Webdevtrick ( https://webdevtrick.com )
-const items = document.querySelectorAll(".accordion a");
 
-function toggleAccordion(){
-  this.classList.toggle('active');
-  this.nextElementSibling.classList.toggle('active');
+setTimeout(function(){
+    $('.loading-spinner').css('display', 'none');
+}, 3000); // it will remove after 5 seconds
+document.onreadystatechange = function () {
+  if (document.readyState === 'complete') {
+    //Remove loader class from div
+      $('.loading-spinner').css('display', 'none');
+  }
 }
-
-items.forEach(item => item.addEventListener('click', toggleAccordion));

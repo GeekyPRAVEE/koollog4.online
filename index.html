@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>KOOLLOG</title>
     <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
 
   <body class="koollog">
+    <div class="loading-spinner"></div>
     <div >
     <!-- header section starts-->
     <nav class="top-nav">
@@ -21,20 +24,19 @@
       </ul>
       <a href="https://koollog.online/cloud/"><img class="login" src="./login.plain.svg"/></a>
     </nav>
-
   </div>
     <header>
-      <div class="logo">
+      <div class="logo" >
         <img src="koollog.png" alt="logo">
       </div>
       <nav class="navbar">
           <ul class="nav__links">
             <li><a href="#home" class="">Home</a></li>
+            <li><a href="#aboutus" class="">About</a></li>
             <li><a href="#applications" class="">Applications</a></li>
-            <li><a href="#" class="products">Products</a></li>
-            <li><a href="#platforms" class="">Platform</a></li>
+            <li><a href="#products" class="">Products</a></li>
+            <!-- <li><a href="#platforms" class="">Platform</a></li> -->
             <li><a href="#contact" class="">Contact</a></li>
-            <!-- <li><a href="#contact" class="">Login</a></li> -->
           </ul>
       </nav>
     </header>
@@ -42,10 +44,10 @@
     <!-- header section ends-->
     <!-- home section starts -->
     <div class="home" id="home">
-      <div class="home-img">
+      <div class="home-img" data-aos="fade-left">
         <img src="./Group 57.png" alt="">
       </div>
-      <div class="home-content">
+      <div class="home-content" data-aos="fade-right">
         <h1>KOOLLOG</h1>
         <h4>Monitor your environment from anywhere, 24/7</h4>
         <p>Koollog provides continuous remote monitoring of your most critical environments to ensure product safety and leave you with peace of mind.</p>
@@ -70,7 +72,7 @@
 
 </div
 <!-- about us section starts -->
-    <div class="about-koollog">
+    <div data-aos="zoom-in-down" class="about-koollog" id="aboutus">
         <div class="koollog-webapp">
         <!-- <a href="#"></a>  <iframe width="600px" height="450px" src="https://www.youtube.com/embed/pEGqQkRfpak?autoplay=1&mute=1&control=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media;clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           <img src="./Group 45.png" alt="">
@@ -325,7 +327,7 @@
     </div>
     <!-- platform section ends -->
     <!-- products section starts -->
-    <div class="productss">
+    <div class="productss" id="products">
     <h3 class="title">Products</h3>
       <div class="products-page">
         <div class="product">
@@ -465,8 +467,10 @@
 
 <!-- <a class="whatsapp" href="https://wa.me/919698887123/?text=Hello"><img class="whatsapp-img" src="./whatsapp.png" alt=""> </a> -->
     </div>
-
-    <script type="text/javascript" src="./index.js"></script>
-    <script type="text/javascript" src="./particles.js"></script>
   </body>
+  <script type="text/javascript" src="./index.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init();
+ </script>
 </html>
