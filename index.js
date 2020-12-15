@@ -23,3 +23,20 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+2
+3
+4
+5
+6
+7
+8
+9
+// Code By Webdevtrick ( https://webdevtrick.com )
+const items = document.querySelectorAll(".accordion a");
+
+function toggleAccordion(){
+  this.classList.toggle('active');
+  this.nextElementSibling.classList.toggle('active');
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
