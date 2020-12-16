@@ -33,3 +33,9 @@ document.onreadystatechange = function () {
       $('.loading-spinner').css('display', 'none');
   }
 }
+var full=false;
+
+function fill(){
+  full=!full;
+  document.getElementById("logocontainer").style.backgroundColor=full?"#3ebffa":"transparent";
+}
