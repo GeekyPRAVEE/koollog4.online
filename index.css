@@ -348,7 +348,7 @@ transform: matrix(1, 0, 0, -1, 0, 0);
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   width: 100%;
-  height: 100vh;
+  height:85vh;
   color:black;  overflow: hidden;
   padding:0px 30px;
   background: rgb(0,116,189);
@@ -598,7 +598,7 @@ color: #ECECEC;
     color:black;
     padding:50px 15px;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     height: 100vh;
     display: block;
   }
@@ -836,6 +836,7 @@ padding: 0px 30px;
   }
   .aboutus h2{
     padding-bottom: 10px;
+    font-size: 3vw;
   }
   .aboutus p{
     padding-bottom: 10px;
@@ -956,7 +957,6 @@ width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
-
 }
 @media only screen and (min-width : 320px) and (max-width :640px){
   .whykoollog{
@@ -1055,6 +1055,66 @@ position: relative;
   width: 50%;
   float: left;
 padding: 80px 30px;
+}
+@media only screen and (min-width : 1025px) and (max-width : 1366px) {
+  .features{
+    font-size: 1.1vw;
+    font-size: 1rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+  }
+  .feature h4{
+    padding: 10px 0px;
+    color: #004cfc;
+    font-size: 1.3vw;
+    font-weight: 700;
+  }
+  .feature{
+  width :92%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  }
+  .feature-img {
+    width: 45%;
+  }
+  .feature-img img{
+    width: 100%;
+     max-width: 500px;
+    max-height: 450px;
+    float: left;
+    padding: 20px;
+    margin-left: 5%;
+  }
+  .feature-des{
+  width: 50%;
+  float: right;
+  padding: 65px 20px;
+  position: relative;
+  }
+  .feature-img1 {
+    width: 45%;
+    float: right;
+  }
+  .feature-img1 img{
+    width: 100%;
+    padding: 20px;
+     float: right;
+    margin-right: 10%;
+    max-width: 500px;
+   max-height: 450px;
+  }
+  .feature-des1{
+    width: 50%;
+    float: left;
+  padding: 80px 30px;
+  }
 }
 @media only screen and (min-width : 641px) and (max-width : 1024px) {
   .features{
