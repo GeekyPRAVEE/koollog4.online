@@ -178,8 +178,8 @@ transform: matrix(1, 0, 0, -1, 0, 0);
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 280px;
-    height: 80px;
+    width:270px;
+    height: 60px;
     align-items: center;
   }
   .navbar{
@@ -612,11 +612,34 @@ iframe{
     margin: auto;
     padding: 20px;
     width: 60%;
-    height: 40%;
+    height: 80%;
   }
   iframe{
     width: 100%;
     height: 100%;
+  }
+  /* form */
+  .modal-form{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 30px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,30,0.7); /* Black w/ opacity */
+  }
+  /* Modal Content */
+  .modal-content-form {
+    margin: auto;
+    padding: 20px;
+    width: 40%;
+    height:50%;
+    max-width: 50%;
+    max-height:60% ;
   }
 }
 @media only screen and (min-width : 320px) and (max-width :640px){
@@ -981,6 +1004,8 @@ width: 100%;
 }
 .why-img img{
   width: 100%;
+  max-width: 350px;
+  max-height: 220px;
   display: flex;
   justify-content: center;
 }
@@ -1075,23 +1100,26 @@ width: 100%;
   }
 }
 /* WHY KOOLLOG ENDS*/
-/* features section starts */
+/* FEATURES SECTION ENDS */
 .features{
   font-size: 1.1vw;
   font-size: 1rem;
-  width: 100%;
+  width: 93%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 50px;
+  display: flex;
 }
 .feature h4{
-  padding: 10px 0px;
+  padding: 0px 0px;
+  padding-bottom: 5px;
   color: #004cfc;
   font-size: 1.3vw;
   font-weight: 700;
 }
 .feature{
-width :92%;
+width :48%;
+display: flex;
 margin-left: auto;
 margin-right: auto;
 border-radius: 25px;
@@ -1100,35 +1128,39 @@ margin-bottom: 30px;
 background-color: #fff;
 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
+.feature-img{
+  width: 50%;
+}
 .feature-img img{
-  width: 49%;
+  width: 100%;
    max-width: 500px;
   max-height: 450px;
   float: left;
   padding: 20px;
-  margin-left: 5%;
+  margin-left: 0px;
 }
 .feature-des{
-width: 50%;
+width: 55%;
 float: right;
-padding: 65px 20px;
+padding: 20px 20px;
 position: relative;
 }
 .feature-img1 {
-  width: 49%;
+  width: 50%;
   float: right;
 }
 .feature-img1 img{
+  width: 100%;
   padding: 20px;
    float: right;
-  margin-right: 10%;
+  margin-right: 0px;
   max-width: 500px;
  max-height: 450px;
 }
 .feature-des1{
-  width: 50%;
+  width: 55%;
   float: left;
-padding: 80px 30px;
+padding: 20px 20px;
 }
 @media only screen and (min-width : 1025px) and (max-width : 1366px) {
   .features{
@@ -1138,6 +1170,7 @@ padding: 80px 30px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 50px;
+    display: block;
   }
   .feature h4{
     padding: 10px 0px;
@@ -1147,6 +1180,7 @@ padding: 80px 30px;
   }
   .feature{
   width :92%;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
@@ -1198,15 +1232,17 @@ padding: 80px 30px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 10px;
+    display: block;
   }
   .feature h4{
     padding: 10px 0px;
     color: #004cfc;
-    font-size: 1.3vw;
+    font-size: 2vw;
     font-weight: 700;
   }
   .feature{
   width :100%;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
@@ -1215,8 +1251,11 @@ padding: 80px 30px;
   background-color: #fff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   }
+  .feature-img{
+    width: 45%;
+  }
   .feature-img img{
-    width: 49%;
+    width: 100%;
      max-width: 500px;
     max-height: 450px;
     float: left;
@@ -1224,16 +1263,17 @@ padding: 80px 30px;
     margin-left: 0px;
   }
   .feature-des{
-  width: 50%;
+  width: 55%;
   float: right;
-  padding: 65px 20px;
+  padding: 40px 20px;
   position: relative;
   }
   .feature-img1 {
-    width: 49%;
+    width: 45%;
     float: right;
   }
   .feature-img1 img{
+    width: 100%;
     padding: 10px 0px;
      float: right;
     margin-right: 15px;
@@ -1241,9 +1281,9 @@ padding: 80px 30px;
    max-height: 450px;
   }
   .feature-des1{
-    width: 50%;
+    width: 55%;
     float: left;
-  padding: 80px 30px;
+  padding: 40px 30px;
   }
   /* .features{
     font-size: 3vw;
@@ -1320,6 +1360,7 @@ padding: 80px 30px;
 }
 @media only screen and (min-width : 320px) and (max-width :640px){
   .features{
+    display: block;
     font-size: 3vw;
     width: 100%;
     margin-left: auto;
@@ -1333,6 +1374,7 @@ padding: 80px 30px;
     font-weight: 700;
   }
   .feature{
+  display: block;
   width :93%;
   background-color: #fff;
   border-radius: 25px;
@@ -1520,11 +1562,17 @@ cursor: pointer;
   padding-top: 5px;
   }
   .title{
-    color: #FF8D43;
-    font-size: 3vw;
+    color: #FF7103;
+    font-size: 3.5vw;
     text-align: center;
-    width: 93%;
-    display: inline-block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    margin-bottom: 15px;
+    border-radius: 40px;
   }
   .applications{
     width: 100%;
@@ -1897,7 +1945,7 @@ width: 50%;
     width: 100%;
     display: inline-block;
     margin-left: auto;
-    padding-top: 20px;
+    padding-top: 0px;
     margin-right: auto;
   }
   .product{
@@ -1915,22 +1963,26 @@ width: 50%;
     max-height: 500px;
   }
   .product-img{
-  width: 100%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   }
   .product-img img{
-    width:80%;
+    width:100%;
     padding:0px 0px;
     margin-left: auto;
     margin-right: auto;
   }
   .product-img1{
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .product-img1 img{
-  padding:0px 60px;
-    width:80%;
+  padding:0px 50px;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .product-des{
   width: 100%;
@@ -1940,7 +1992,7 @@ width: 50%;
   .product-des h5{
     padding-bottom: 10px;
     color: #004cfc;
-    font-size: 5vw;
+    font-size: 3vw;
   }
 }
 /* product section ends */
@@ -2102,7 +2154,7 @@ textarea:focus{
   .contact{
   width: 92%;
   display: block;
-  margin-top: 40px;
+  margin-top: 20px;
   background-color: #fff;
   font-size: 1rem;
   padding-bottom: 30px;
