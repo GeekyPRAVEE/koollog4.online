@@ -9,12 +9,11 @@ font-family: 'Poppins', sans-serif;
 }
 html{
 scroll-behavior: smooth;
-
 }
 body{
 width: 100%;
 overflow-x: hidden;
- overflow-y: scroll;
+overflow-y: scroll;
 margin-left: auto;
 margin-right: auto;
 padding: 0;
@@ -45,7 +44,6 @@ border-radius: 50%;
     transform: rotate(360deg);
     }
 }
-
 /* HEADER */
 .top-nav{
   width: 100%;
@@ -58,7 +56,6 @@ border-radius: 50%;
   background-color: #FF700C;
 }
 .top-nav ul{
-
 }
 .top-nav ul li{
     display: inline;
@@ -146,7 +143,7 @@ transform: matrix(1, 0, 0, -1, 0, 0);
   box-shadow: 0px 0px 20px rgba(255, 111, 0, 0.5);
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
-@media only screen and (min-device-width : 641px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 641px) and (max-width : 1024px) {
   .cta{
     margin-left: 0px;
     font-size: 3vw;
@@ -245,7 +242,7 @@ transform: matrix(1, 0, 0, -1, 0, 0);
     width: 15px;
   }
 }
-@media only screen and (min-device-width : 320px) and (max-device-width :640px) {
+@media only screen and (min-width : 320px) and (max-width :640px) {
   .cta{
     margin-left: 0px;
     font-size: 2vw;
@@ -471,7 +468,7 @@ color: #ECECEC;
   height: 30%;
 }
 
-@media only screen and (min-device-width : 1025px) and (max-device-width : 1366px) {
+@media only screen and (min-width : 1025px) and (max-width : 1366px) {
   .home{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -522,7 +519,7 @@ color: #ECECEC;
     height: 75vh;
   }
 }
-@media only screen and (min-device-width : 641px) and (max-device-width : 1024px) and (orientation:portrait) {
+@media only screen and (min-width : 641px) and (max-width : 1024px) and (orientation:portrait) {
   .home{
     font-weight: 500;
     width: 100%;
@@ -533,7 +530,7 @@ color: #ECECEC;
     display: block;
   }
 }
-@media only screen and (min-device-width : 641px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 641px) and (max-width : 1024px) {
   .home{
     font-weight: 500;
     width: 100%;
@@ -594,7 +591,7 @@ color: #ECECEC;
    margin-top: 20px;
   }
 }
-@media only screen and (min-device-width : 320px) and (max-device-width :640px){
+@media only screen and (min-width : 320px) and (max-width :640px){
   .home{
     font-weight: 500;
     width: 100%;
@@ -679,26 +676,29 @@ color: #ECECEC;
 }
 .koollog-webapp{
 width: 50%;
-padding: 20px 20px;
+padding: 20px 0px;
 margin-left: auto;
 margin-right: auto;
+margin-left: 10px;
 }
 .koollog-webapp img{
 width : 100%;
 height: 100%;
 float: left;
-margin-left: auto;
-margin-right: auto;
 padding: 10px;
+
 }
 .aboutus{
-padding: 20px;
+padding: 20px 30px;
 width : 60%;
 float: left;
 font-size: 1rem;
 }
 .aboutus h2{
   padding-bottom: 10px;
+  font-size: 1.6vw;
+  padding-bottom: 20px;
+  color: #004cfc;
 }
 .aboutus p{
   padding-bottom: 10px;
@@ -730,7 +730,7 @@ font-size: 1rem;
 .aboutus-card p{
   padding-left: 33px;
 }
-@media only screen and (min-device-width : 641px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 641px) and (max-width : 1024px) {
   .about{
     width: 97%;
   }
@@ -801,7 +801,7 @@ padding: 0px 30px;
     padding-left: 37px;
   }
 }
-@media only screen and (min-device-width : 320px) and (max-device-width :640px){
+@media only screen and (min-width : 320px) and (max-width :640px){
   iframe{
   width : 100%;
   height: 300px;
@@ -910,7 +910,7 @@ width: 100%;
   justify-content: center;
 }
 
-@media only screen and (min-device-width : 641px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 641px) and (max-width : 1024px) {
   .whykoollog{
     width: 97%;
     display: flex;
@@ -958,7 +958,7 @@ width: 100%;
   }
 
 }
-@media only screen and (min-device-width : 320px) and (max-device-width :640px){
+@media only screen and (min-width : 320px) and (max-width :640px){
   .whykoollog{
     width: 100%;
     display: inline-block;
@@ -1056,7 +1056,7 @@ position: relative;
   float: left;
 padding: 80px 30px;
 }
-@media only screen and (min-device-width : 641px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 641px) and (max-width : 1024px) {
   .features{
     font-size: 1.1vw;
     font-size: 1rem;
@@ -1184,7 +1184,7 @@ padding: 80px 30px;
   padding-bottom: 15px;
   } */
 }
-@media only screen and (min-device-width : 320px) and (max-device-width :640px){
+@media only screen and (min-width : 320px) and (max-width :640px){
   .features{
     font-size: 3vw;
     width: 100%;
@@ -1315,7 +1315,7 @@ padding-top: 5px;
 box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
 cursor: pointer;
 }
-@media only screen and (min-device-width : 641px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 641px) and (max-width : 1024px) {
 .applications{
   padding : 10px 0px;
   width: 100%;
@@ -1381,7 +1381,7 @@ cursor: pointer;
 }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width :640px){
+@media only screen and (min-width : 320px) and (max-width :640px){
   .applications .title{
   padding-top: 5px;
   }
@@ -1694,7 +1694,7 @@ width: 50%;
   color: #004cfc;
   font-size: 1.2vw;
 }
-@media only screen and (min-device-width : 641px) and (max-device-width : 1024px) {
+@media only screen and (min-width : 641px) and (max-width : 1024px) {
   .productss{
       margin-left:auto;
       margin-right: auto;
@@ -1754,7 +1754,7 @@ width: 50%;
     font-size: 2vw;
   }
 }
-@media only screen and (min-device-width : 320px) and (max-device-width :640px){
+@media only screen and (min-width : 320px) and (max-width :640px){
   .productss{
     width: 100%;
     /* background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255)); */
@@ -1959,7 +1959,7 @@ textarea:focus{
   font-weight: bold;
   box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
 }
-@media only screen and (min-device-width : 320px) and (max-device-width :640px){
+@media only screen and (min-width : 320px) and (max-width :640px){
   .contact-section{
   padding-top: 10px;
   padding-bottom: 20px;
@@ -2096,7 +2096,7 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
   text-align: center;
   padding: 40px;
 }
-@media only screen and (min-device-width : 320px) and (max-device-width :640px){
+@media only screen and (min-width : 320px) and (max-width :640px){
   .footer{
     /* background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255)); */
   }
