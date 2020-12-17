@@ -13,7 +13,7 @@
   </head>
 
   <body class="koollog">
-  
+
     <div class="loading-spinner"></div>
     <!-- header section starts-->
     <nav class="top-nav">
@@ -54,6 +54,12 @@
         <a href="#contact"  class="cta">Contact us</a>
         <!-- <a href="https://youtu.be/pEGqQkRfpak"  class="cta">Demo Video</a> -->
         <a id="myBtn" class="cta" >Demo video</a>
+        <div class="center">
+          <div class="pulse">
+            <a id="myBtn-form"><img class="form-icon" src="./chat-icon6.svg" style="width:65px;height:65px" alt=""> </a>
+          </div>
+        </div>
+
         <!-- <h2>WHAT IS KOOLLOG ?</h2>
         <p>Temperature measurement is important wherever temperature-sensitive products are studied, produced, stored or transported. Koollog offers a range of temperature measuring instruments to this end: from temperature probes and transmitters to handhelds and data loggers. Koollog Monitoring System makes it possible to access temperature and other necessary measured data at any time from anywhere in the world.</p> -->
       </div>
@@ -63,45 +69,67 @@
         <span class="close">&times;</span>
         <iframe width="560" height="450" src="https://www.youtube.com/embed/pEGqQkRfpak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-    </div
+    </div>
+    <div id="myModal-form" class="modal-form">
+      <div class="modal-content-form">
+        <div class="contact-form">
+          <span class="close-form">&times;</span>
+          <h4>Contact Form</h4>
+          <form class="info" action="index.html" method="post">
+            <input class="fname" type="text" name="name" placeholder="Full name*">
+            <input type="email" name="email" placeholder="Email*">
+            <input type="tel" name="tel" placeholder="Mobile number*">
+            <input type="text" name="name" placeholder="subject">
+            <textarea rows="3" placeholder="Message..." cols="50" name="comment" form="usrform"></textarea>
+            <input class="send-msg"type="button" name="Send message" value="Send message">
+          </form>
+        </div>
+      </div>
+    </div>
 <!-- home section ends -->
 
 <!-- about us section starts -->
-    <div data-aos="zoom-in-down" class="about-koollog" id="aboutus">
-        <div class="koollog-webapp">
-        <!-- <a href="#"></a>  <iframe width="600px" height="450px" src="https://www.youtube.com/embed/pEGqQkRfpak?autoplay=1&mute=1&control=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media;clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-          <img src="./Group 45.png" alt="">
-        </div>
-        <div class="aboutus">
-          <h2>Continuous environmental monitoring that fits your business.</h2>
-          <p>   KOOLLOG, the most advanced Temperature Monitoring system in India. It is a Digital Sensor based real-time, truly online system, designed Hashprompt Technologies us and manufactured in INDIA with International Standards. We have over 12 years of experience in providing Temperature Monitoring  Services in India and in the United States.Koollog is a cloud-based remote monitoring system that monitors your most important environmental variables including temperature and humidity. Collect all your data in a single platform, and monitor and receive alerts on any device.</p>
-            <div class="aboutus-card">
-                <div class="aboutus-heading">
-                  <!-- <img src="./icon-bell 1.svg" alt=""> -->
-                  <img src="./bell-icon.png" alt="">
-                  <h4>Protects assets: </h4>
-                </div>
-              <p>Instant notifications and alerts help prevent product and material degradation or loss due to improper environmental conditions.</p>
-            </div>
-
-            <div class="aboutus-card">
-              <div class="aboutus-heading">
-                <!-- <img src="./icon-computer 1.svg" alt=""> -->
-                <img src="./computer-icon.png" alt="">
-                <h4>Simplifies monitoring: </h4>
-              </div>
-              <p>Easy implementation and remote monitoring capabilities reduce the burden on staff and let you monitor multiple locations from a single platform.</p>
-            </div>
-
-            <div class="aboutus-card">
-              <div class="aboutus-heading">
-                <!-- <img src="./icon-bullseye 1.svg" alt=""> -->
-                <img src="./bullseye-icon.png" alt="">
-                <h4>Provides a complete monitoring solution: </h4>
-              </div>
-              <p>From installation to validation and support, Koollog closes the gaps in your monitoring system.</p>
-            </div>
+    <div class="about">
+      <div data-aos="zoom-in-down" class="about-koollog" id="aboutus">
+          <div class="koollog-webapp">
+          <!-- <a href="#"></a>  <iframe width="600px" height="450px" src="https://www.youtube.com/embed/pEGqQkRfpak?autoplay=1&mute=1&control=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media;clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <img src="./Group 45.png" alt="">
+          </div>
+          <div class="aboutus">
+            <h2>Continuous environmental monitoring that fits your business.</h2>
+            <p>   KOOLLOG, the most advanced Temperature Monitoring system in India. It is a Digital Sensor based real-time, truly online system, designed Hashprompt Technologies us and manufactured in INDIA with International Standards. We have over 12 years of experience in providing Temperature Monitoring  Services in India and in the United States.Koollog is a cloud-based remote monitoring system that monitors your most important environmental variables including temperature and humidity. Collect all your data in a single platform, and monitor and receive alerts on any device.</p>
+          </div>
       </div>
+    <div class="aboutus-cards">
+      <div class="aboutus-card">
+          <div class="aboutus-heading">
+            <img src="./icon-bell 1.svg" alt="">
+            <!-- <img src="./bell-icon.png" alt=""> -->
+            <h4>Protects assets: </h4>
+          </div>
+        <p>Instant notifications and alerts help prevent product and material degradation or loss due to improper environmental conditions.</p>
+      </div>
+
+      <div class="aboutus-card">
+        <div class="aboutus-heading">
+          <img src="./icon-computer 1.svg" alt="">
+          <!-- <img src="./computer-icon.png" alt=""> -->
+          <h4>Simplifies monitoring: </h4>
+        </div>
+        <p>Easy implementation and remote monitoring capabilities reduce the burden on staff and let you monitor multiple locations from a single platform.</p>
+      </div>
+
+      <div class="aboutus-card">
+        <div class="aboutus-heading">
+          <img src="./icon-bullseye 1.svg" alt="">
+          <!-- <img src="./bullseye-icon.png" alt=""> -->
+          <h4>Provides a complete monitoring solution: </h4>
+        </div>
+        <p>From installation to validation and support, Koollog closes the gaps in your monitoring system.</p>
+      </div>
+    </div>
+
+
     </div>
 
 <!-- about us section ends -->
@@ -408,47 +436,33 @@
     <div class="contact-section" id="contact">
       <h2 class="title">Contact</h2>
       <div class="contact">
+          <div class="contact-img">
+              <img src="./contact-1.png" alt="">
+          </div>
+          <div class="address">
+                <div class="address-info">
+                  <img src="./location_icon.png" alt="">
+                  <div class="">
+                    <h4>Address Info</h4>
+                    <p>91, Perundurai Road, Erode <br> Tamilnadu, India</p>
+                  </div>
+                </div>
+                <div class="email">
+                  <img src="./email_icon.png" alt="">
+                  <div class="">
+                    <h4>Email</h4>
+                    <p>sales@koollog.online <br> scs@koollog.online</p>
+                  </div>
+                </div>
+                <div class="email">
+                  <img src="./email_icon.png" alt="">
+                  <div class="">
+                    <h4>Email</h4>
+                    <p>sales@koollog.online <br> scs@koollog.online</p>
+                  </div>
+                </div>
+          </div>
 
-        <div class="address">
-          <div class="address-info">
-            <img src="./location_icon.png" alt="">
-            <div class="">
-              <h4>Address Info</h4>
-              <p>91, Perundurai Road, Erode <br> Tamilnadu, India</p>
-            </div>
-          </div>
-          <div class="email">
-            <img src="./email_icon.png" alt="">
-            <div class="">
-              <h4>Email</h4>
-              <p>sales@koollog.online <br> scs@koollog.online</p>
-            </div>
-          </div>
-          <div class="email">
-            <img src="./email_icon.png" alt="">
-            <div class="">
-              <h4>Email</h4>
-              <p>sales@koollog.online <br> scs@koollog.online</p>
-            </div>
-          </div>
-        </div>
-        <div class="contact-container">
-              <div class="contact-img">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.0313110337493!2d77.70244721441689!3d11.332422051784294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f1f36b1fc7d%3A0x629b6e4ffde7de09!2sHashprompt%20Softwares%20Private%20Ltd!5e0!3m2!1sen!2sin!4v1607692020016!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                <!-- <img src="./contact-2.png" alt=""> -->
-              </div>
-              <div class="contact-form">
-                <h4>Contact Form</h4>
-                <form class="info" action="index.html" method="post">
-                  <input class="fname" type="text" name="name" placeholder="Full name*">
-                  <input type="email" name="email" placeholder="Email*">
-                  <input type="tel" name="tel" placeholder="Mobile number*">
-                  <input type="text" name="name" placeholder="subject">
-                  <textarea rows="3" placeholder="Message..." cols="50" name="comment" form="usrform"></textarea>
-                  <input class="send-msg"type="button" name="Send message" value="Send message">
-                </form>
-              </div>
-        </div>
      </div>
    </div>
 <!-- contact section ends -->
@@ -472,7 +486,7 @@
     <p>Coyright  2002 - 2020 koollog.online. All rights reserved.</p>
   </div>
 
-<!-- <a class="whatsapp" href="https://wa.me/919698887123/?text=Hello"><img class="whatsapp-img" src="./whatsapp.png" alt=""> </a> -->
+<!-- <a class="whatsapp" href="https://wa.me/919698887123/?text=Hello"><img class="whatsapp-img" src="./message.svg" alt=""> </a> -->
     </div>
   </body>
   <script type="text/javascript" src="./index.js"></script>

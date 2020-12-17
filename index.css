@@ -11,6 +11,9 @@ html{
 scroll-behavior: smooth;
 }
 body{
+width: 100%;
+/* overflow-x: hidden;
+overflow-y: hidden */
 margin-left: auto;
 margin-right: auto;
 padding: 0;
@@ -22,7 +25,6 @@ background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%
     left: 50%;
     width: 20px;
     height: 20px;
-
     z-index: 999999999999;
 }
 .loading{
@@ -342,10 +344,10 @@ transform: matrix(1, 0, 0, -1, 0, 0);
 .home{
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   color:black;  overflow: hidden;
-  padding:0px 50px;
+  padding:0px 30px;
   background: rgb(0,116,189);
   background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%);
   margin-top:2%;
@@ -412,7 +414,7 @@ color: #ECECEC;
 .modal-content {
   margin: auto;
   padding: 20px;
-  width: 80%;
+  width: 50%;
   height: 30%;
 }
 /* The Close Button */
@@ -428,11 +430,45 @@ color: #ECECEC;
   text-decoration: none;
   cursor: pointer;
 }
+.close-form {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close-form:hover,
+.close-form:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* form */
+.modal-form{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 20px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,30,0.7); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content-form {
+  margin: auto;
+  padding: 20px;
+  width: 30%;
+  height: 30%;
+}
 @media only screen and (min-device-width : 1025px) and (max-device-width : 1360px) {
   .home{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    width: 98vw;
+    width: 100%;
     height: 85vh;
     color:black;  overflow: hidden;
     padding:0px 50px;
@@ -486,7 +522,7 @@ color: #ECECEC;
     color:black;  overflow: hidden;
     padding:50px 15px;
     margin-top: 0px;
-    height: 100%;
+    height: 100vh;
     display: block;
   }
   .home-content{
@@ -544,7 +580,7 @@ color: #ECECEC;
   .home{
     font-weight: 500;
     width: 100%;
-    color:black;  overflow: hidden;
+    color:black;
     padding:50px 15px;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -605,19 +641,26 @@ color: #ECECEC;
 }
 /* HOME SECTION ENDS */
 /* ABOUT US SECTION STARTS */
-.about-koollog{
+.about{
+  overflow: hidden;
+ background-color: #fff;
+  border-radius: 20px;
+  width: 93%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  }
+  .about-koollog{
   padding: 0px 30px;
   padding-bottom: 20px;
   font-size: 1.1rem;
   display: flex;
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  color: #fff;
 }
 .koollog-webapp{
 width: 55%;
-padding: 50px 20px;
+padding: 20px 20px;
 }
 .koollog-webapp img{
 width : 100%;
@@ -626,7 +669,7 @@ padding: 10px;
 }
 .aboutus{
 padding: 20px;
-width : 50%;
+width : 60%;
 float: left;
 font-size: 1rem;
 }
@@ -636,8 +679,15 @@ font-size: 1rem;
 .aboutus p{
   padding-bottom: 10px;
 }
+.aboutus-cards{
+  display: flex;
+  width:  100%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 .aboutus-card{
-
+  width: 30%;
 }
 .aboutus-card img{
   padding: 10px 5px;
@@ -646,30 +696,19 @@ font-size: 1rem;
   display: flex;
 }
 .aboutus-heading img{
-  padding: 5px 5px;
-  width:50px;
+  padding: 0px 0px;
+  width:30px;
 }
 .aboutus-heading h4{
-  padding-top: 13px;
+  padding-left: 5px;
   vertical-align: middle;
 }
 .aboutus-card p{
-  padding-left: 37px;
-}
-iframe{
-  width: 90%;
-  width : 100%;
-float: left;
-padding: 0px 0px;
-border-radius: 20px;
+  padding-left: 33px;
 }
 @media only screen and (min-device-width : 641px) and (max-device-width : 1024px) {
-  iframe{
-  width : 100%;
-  height: 300px;
-  float: none;
-  padding: 0px 0px;
-  border-radius: 20px;
+  .about{
+    width: 97%;
   }
   .about-koollog{
     padding: 0px 15px;
@@ -681,18 +720,26 @@ border-radius: 20px;
     margin-right: auto;
   }
   .koollog-webapp{
-  width: 100%;
-  padding: 0px 0px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
   }
   .koollog-webapp img{
-    width : 100%;
-  float: none;
-  padding: 10px;
-  }
-  .aboutus{
-  padding: 10px 0px;
   width : 100%;
-  float: none;
+  float: inherit;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .aboutus{
+    display: block;
+  padding: 10px 30px;
+  width : 100%;
+  float: inherit;
+  color: black;
+
   }
   .aboutus h2{
     padding-bottom: 10px;
@@ -700,8 +747,18 @@ border-radius: 20px;
   .aboutus p{
     padding-bottom: 10px;
   }
+  .aboutus-cards{
+    display: block;
+    width:  100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .aboutus-card{
+    width: 100%;
+    display: block;
 font-size: 1.2rem;
+padding: 0px 30px;
   }
   .aboutus-card img{
     padding: 10px 5px;
@@ -751,6 +808,7 @@ font-size: 1.2rem;
   width : 100%;
   float: none;
   font-size: 0.8rem;
+  color: black;
   }
   .aboutus h2{
     padding-bottom: 10px;
@@ -758,8 +816,13 @@ font-size: 1.2rem;
   .aboutus p{
     padding-bottom: 10px;
   }
+  .aboutus-cards{
+display: block;
+padding: 0px 15px;
+  }
   .aboutus-card{
 font-size: 0.8rem;
+width: 100%;
   }
   .aboutus-card img{
     padding: 10px 5px;
@@ -782,6 +845,7 @@ font-size: 0.8rem;
 
 /*WHY KOOLLOG STARTS */
 .whykoollog{
+  margin-top: 30px;
   display: flex;
   width: 98%;
   flex-direction: row;
@@ -968,20 +1032,87 @@ position: relative;
   float: left;
 padding: 80px 30px;
 }
-.feature-img2 img{
-  width: 45%;
-  width: 150px;
-  float: left;
-  margin-left: 150px;
-  max-height: 350px;
-  padding: 10px 0px;
-}
-@media only screen and (max-width: 800px) {
+@media only screen and (min-device-width : 641px) and (max-device-width : 1024px) {
   .features{
     font-size: 3vw;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 5px;
+  }
+  .feature h4{
+  padding: 5px 0px;
+    color: #004cfc;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .feature{
+  width :97%;
+  font-size: 1rem;
+  display: block;
+  background-color: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  padding-top: 10px;
+  }
+  .feature-img{
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .feature-img img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 30px;
+    padding-top: 10px;
+    float:inherit;
+    max-width: 100%;
+   max-height: 100%;
+  }
+  .feature-des{
+  width: 100%;
+  float: inherit;
+  padding: 0px 50px;
+  position: relative;
+  padding-bottom: 15px;
+
+  }
+  .feature-img1 {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: inherit;
+  }
+  .feature-img1 img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 30px;
+    padding-top: 10px;
+    float:inherit;
+    max-width: 100%;
+   max-height: 100%;
+   float: none;
+  }
+  .feature-des1{
+    width: 100%;
+    float: left;
+  padding: 0px 20px;
+  padding-bottom: 15px;
+  }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width :640px){
+  .features{
+    font-size: 3vw;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
   }
   .feature h4{
   padding: 10px 0px;
@@ -1006,12 +1137,12 @@ padding: 80px 30px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px 30px;
+    padding: 5px 20px;
 
   }
   .feature-des{
   width: 100%;
-  padding: 0px 20px;
+  padding: 0px 15px;
   position: relative;
   padding-bottom: 15px;
   }
@@ -1022,12 +1153,12 @@ padding: 80px 30px;
   .feature-img1 img{
     width: 100%;
     float: none;
-    padding: 30px 30px;
+    padding: 5px 20px;
   }
   .feature-des1{
     width: 100%;
     float: left;
-  padding: 0px 20px;
+  padding: 0px 15px;
   padding-bottom: 15px;
   }
   .feature-img2 img{
@@ -1046,11 +1177,17 @@ padding: 80px 30px;
 padding-top: 5px;
 }
 .title{
-  color: #FF8D43;
-  font-size: 3vw;
+  color: #FF7103;
+  font-size: 2vw;
   text-align: center;
-  width: 93%;
-  display: inline-block;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 15px;
+  border-radius: 40px;
 }
 .applications{
   width: 100%;
@@ -1100,13 +1237,13 @@ padding-top: 5px;
 box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
 cursor: pointer;
 }
-@media only screen and (max-width: 1500px) {
+@media only screen and (min-device-width : 641px) and (max-device-width : 1024px) {
 .applications{
-  padding : 50px 0px;
+  padding : 10px 0px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255));
+  /* background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255)); */
 }
 .title{
   color: #FF7103;
@@ -1165,7 +1302,8 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
 cursor: pointer;
 }
 }
-@media only screen and (max-width: 800px) {
+
+@media only screen and (min-device-width : 320px) and (max-device-width :640px){
   .applications .title{
   padding-top: 5px;
   }
@@ -1178,6 +1316,7 @@ cursor: pointer;
   }
   .applications{
     width: 100%;
+    padding: 0px;
   }
   .application{
     position: relative;
@@ -1194,15 +1333,17 @@ cursor: pointer;
   }
   .app-card{
     width: 93%;
-    padding: 20px;
+    padding: 10px 10px;
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;
     border-radius: 25px;
     box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
     display: flex;
+    margin-bottom: 15px;
   }
   .app-content{
+    padding-top: 20px;
     color: black;
     font-size: 3vw;
   }
@@ -1226,8 +1367,6 @@ cursor: pointer;
 }
 /* application section ends */
 /* platform section starts */
-
-
 .platforms{
   width: 100%;
   display: block;
@@ -1281,9 +1420,7 @@ cursor: pointer;
 box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
 cursor: pointer;
 }
-
 /* platforms cards */
-
 .platform{
   width: 95%;
   display: flex;
@@ -1434,17 +1571,15 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
   }
 }
 /* platform section ends */
-/* product section starts */
-.productss{
-  /* background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255)); */
 
+/* PRODUCT SECTION STARTS*/
+.productss{
     margin-left:auto;
     margin-right: auto;
 }
 .products-page{
   width: 95%;
   display: flex;
-
   margin-left: auto;
   padding-top: 20px;
   margin-right: auto;
@@ -1487,7 +1622,10 @@ width: 50%;
   color: #004cfc;
   font-size: 1.2vw;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (min-device-width : 641px) and (max-device-width : 1024px) {
+
+}
+@media only screen and (min-device-width : 320px) and (max-device-width :640px){
   .productss{
     width: 100%;
     background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255));
@@ -1509,16 +1647,20 @@ width: 50%;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.2vw;
+    font-size: .7rem;
     margin-bottom: 20px;
       max-height: 500px;
   }
   .product-img{
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   }
   .product-img img{
     width:80%;
     padding:0px 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .product-img1{
     width: 100%;
@@ -1530,20 +1672,23 @@ width: 50%;
   .product-des{
   width: 100%;
     padding:10px;
-    font-size: 1rem;
+    font-size: .7rem;
   }
-
-
+  .product-des h5{
+    padding-bottom: 10px;
+    color: #004cfc;
+    font-size: 5vw;
+  }
 
 }
 /* product section ends */
 /* contact section starts */
+
 .contact-section{
 padding-top: 40px;
 padding-bottom: 20px;
-background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255));
+/* background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255)); */
 margin-top: 0px;
-
 margin-left:auto;
 margin-right: auto;
 }
@@ -1553,21 +1698,24 @@ margin-top: 40px;
 background-color: #fff;
 font-size: 1.3vw;
 font-size: 1rem;
-padding-bottom: 30px;
+padding-bottom: 10px;
 margin-left: auto;
 margin-right: auto;
 border-radius: 25px;
+display: flex;
 box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
 }
 .contact h4{
-  color:#FF6F00;
-  font-size: 1.3rem;
-  padding-bottom: 10px;
+color:#FF6F00;
+font-size: 1.3rem;
+padding-bottom: 10px;
 }
 .address{
-width: 100%;
-padding: 40px;
-display: flex;
+width: 50%;
+margin-left: 5%;
+padding: 20px 40px;
+display: block;
+margin-right: 30px;
 justify-content:  center;
 }
 .address img{
@@ -1589,39 +1737,69 @@ display: flex;
   display: flex;
   width: 100%;
 }
+.form-icon{
+  z-index: 999;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+  animation: animate 2.5s linear infinite;
+  cursor: pointer;
+}
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255,123,30, 0.7), 0 0 0 0 rgba(255,123,30, 0.7);
+    }
+    40% {
+        box-shadow: 0 0 0 50px rgba(255,123,30, 0), 0 0 0 0 rgba(255,123,30, 0.7);
+    }
+    80% {
+        box-shadow: 0 0 0 50px rgba(255,123,30, 0), 0 0 0 30px rgba(255,123,30, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 64, 0), 0 0 0 30px rgba(255, 0, 64, 0);
+    }
+}
+
 .contact-form{
-  height: 450px;
-  min-width: 350px;
-  background-color:#F8F8F8;
+
+  width: 100%;
+  background-color:#fff;
   color: black;
   padding: 10px 20px;
-  margin-left: 200px;
-  margin-right: 5%;
   border-radius: 20px;
 }
 .contact-form h4{
   padding: 10px 0px;
 }
 .contact-img{
+margin-left: 20px;
 float: left;
-width: 40%;
-height: 60%;
-  min-width: 300px;
+width: 60%;
+padding: 20px 20px;
 }
 .contact-img img{
   width: 100%;
-  height: 100%;
- padding-left:20%;
-  padding-top: 0px;
+  height: 80%;
+  padding-top: 25px;
 }
 
 input{
     padding: 5px;
+    padding-left: 10px;
     margin-bottom: 20px;
-    background: transparent;
+    /* background: transparent; */
+    border-radius: 15px;
     border: none;
-    border-bottom: 1px solid black;
+    background-color: #fff;
+    border-bottom: .5px solid rgba(0, 0, 0, 0.25);
     color: black;
+}
+.info input:focus{
+box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
+  outline: none;
+  border-radius: 15px;
+  background-color: #fff;
 }
 input::placeholder {
     color: black;
@@ -1631,30 +1809,37 @@ display: flex;
 flex-direction: column;
 }
 textarea{
-  padding: 20px;
+  padding: 10px;
+  outline: none;
+  border-radius: 15px;
+}
+textarea:focus{
+  box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
+    outline: none;
+    border-radius: 15px;
 }
 .send-msg{
   transition: .3s ease background-color;
   outline: none;
   border: none;
   background-color:#FF6F00;
-  padding: 10px;
-  margin-top: 20px;
+  padding: 5px 10px;
+  margin-top: 10px;
   border-radius: 20px;
   font-size: 20px;
   color: #fff;
   font-weight: bold;
-  float: right;
-    box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (min-device-width : 320px) and (max-device-width :640px){
   .contact-section{
   padding-top: 40px;
   padding-bottom: 20px;
-  background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255));
+  /* background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255)); */
   }
   .contact{
   width: 92%;
+  display: block;
   margin-top: 40px;
   background-color: #fff;
   font-size: 1rem;
@@ -1671,6 +1856,7 @@ textarea{
     padding-bottom: 15px;
   }
   .address{
+  margin-left: 0;
   width: 100%;
   padding: 30px;
   display: block;
@@ -1686,11 +1872,20 @@ textarea{
   padding: 0px 20px;
   display: block;
   }
-  .contact-img img{
-  width: 30%;
-  display: flex;
-  height: 500px;
+  .contact-img{
+  margin-left: 20px;
+  float: inherit;
+  width: 90%;
+  padding: 20px 20px;
+  display: block;
   }
+  .contact-img img{
+    width: 100%;
+    height: 90%;
+    display: block;
+    padding-top: 25px;
+  }
+
   .contact-form{
     width: 90%;
     min-width: 250px;
@@ -1712,6 +1907,7 @@ textarea{
     border-bottom: 1px solid black;
     color: black;
   }
+
   input::placeholder {
     color: black;
   }
@@ -1736,20 +1932,6 @@ textarea{
     float: right;
     box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
   }
-  .contact-img{
-  float: none;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 300px;
-  }
-  .contact-img img{
-    width: 80%;
-    height: 80%;
-    padding-left: 0px;
-    padding-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .contact-container{
     display: block;
     width: 100%;
@@ -1759,7 +1941,7 @@ textarea{
 /* contact section ends */
 /* footer section starts */
 .footer{
-  background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255));
+  /* background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255)); */
 }
 .footer-card{
 width: 92%;
@@ -1773,7 +1955,7 @@ margin-right: auto;
 width: 100%;
 color: #fff;
 background-color:  #FF6F00;
-padding: 30px 20px;
+padding: 15px 20px;
 border-radius: 20px;
 margin: 0px 5px;
 box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
@@ -1788,7 +1970,7 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
 }
 @media only screen and (max-width: 800px) {
   .footer{
-    background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255));
+    /* background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255)); */
   }
   .footer-card{
   width: 92%;
@@ -1819,8 +2001,8 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
 .whatsapp{
 float: right;
 position: fixed;
-right: 0px;
-bottom: 0px;
+right: 20px;
+bottom: 20px;
 
 }
 .whatsapp-img{
@@ -1835,4 +2017,76 @@ z-index: 999;
 
 
 
-/* footer section ends */
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 35%;
+  z-index: 9;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+
+}
+/* Add styles to the form container */
+.form-container {
+  border-radius: 20px;
+  width: 45%;
+  padding: 10px;
+  background-color: white;
+  left: 30%;
+}
+/* Full-width input fields */
+.form-container input{
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0 10px 0;
+  border: none;
+  background: #f1f1f1;
+  padding: 5px;
+  margin-bottom: 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
+  outline: none;
+}
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
