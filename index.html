@@ -70,11 +70,11 @@
           <span class="close-form">&times;</span>
           <h4>Interested in Koollog? Get in touch!</h4>
           <form class="info" id="my-form" action="https://formspree.io/f/xvovweea" method="POST">
-            <input class="fname" type="text" name="name" placeholder="Full name*">
-            <input type="email" name="email" placeholder="Email*">
-            <input type="tel" name="tel" placeholder="Mobile number*">
-            <input type="text" name="name" placeholder="subject">
-            <textarea rows="3" placeholder="Message..." cols="50" name="message"></textarea>
+            <input class="fname" type="text" name="name" placeholder="Full name*" required>
+            <input type="email" name="email" placeholder="Email*" required>
+            <input type="tel" name="tel" placeholder="Mobile number*" required>
+            <input type="text" name="name" placeholder="subject" required>
+            <textarea rows="3" placeholder="Message..." cols="50" name="message" required></textarea>
             <!-- <input class="send-msg"type="submit" name="Send message" value="Send message"> -->
             <button class="send-msg" type="submit" name="button">Send message</button>
           </form>
@@ -374,14 +374,21 @@
 <!-- PLATFOM SECTION STARTS -->
     <div class="platform">
         <div class="platform-content">
-          <div class="">
-            <h3>connect straight into KOOLLOG</h3>
+
+            <h2>Koollog is available on all devices</h2>
+            <div class="devices">
+            <a href="https://koollog.online/cloud/"><img class="devices"src="./webapp3.png" alt=""></a>
+            <a href="https://play.google.com/store/apps/details?id=com.koollog&hl=en_IN&gl=US"><img class="devices"src="./playstore1.png" alt=""></a>
+            <a href="#"><img class="devices"src="./appstore.png" alt=""></a>
+            </div>
+            <h4>connect straight into KOOLLOG</h4>
             <p>Get accurate, real-time temperature and humidity readings straight to your phone or desktop in iAuditor. Right out of the box, our sensors have been configured to work seamlessly within iAuditor, connecting automatically when you set them up so you can build the workflows you need.</p>
-          </div>
+
         </div>
         <div class="platform-img">
           <!-- <img src="./guide.png" alt=""> -->
-          <img src="./appmockup.png" alt="">
+          <!-- <img src="./appmockup.png" alt=""> -->
+          <img src="./alldevices.png" alt="">
         </div>
     </div>
 <!-- PLATFOM SECTION ENDS-->
