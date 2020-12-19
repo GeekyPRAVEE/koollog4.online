@@ -28,21 +28,21 @@ width: 20px;
 height: 20px;
 z-index: 999999999999;
 border-radius: 50%;
- border: 3px solid #ffffff;
- animation: rotate .5s linear infinite;
- border-top: 3px solid #3c6aff;
+border: 3px solid #ffffff;
+animation: rotate .5s linear infinite;
+border-top: 3px solid #3c6aff;
 }
 .loading{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+width: 20px;
+height: 20px;
 }
 @keyframes rotate {
 100% {
     transform: rotate(360deg);
-    }
+  }
 }
 /* HEADER */
 .top-nav{
@@ -1169,7 +1169,7 @@ padding: 20px 20px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     display: block;
   }
   .feature h4{
@@ -1185,7 +1185,7 @@ padding: 20px 20px;
   margin-right: auto;
   border-radius: 25px;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   background-color: #fff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
   }
@@ -1445,6 +1445,7 @@ padding-top: 5px;
 }
 .applications{
   width: 100%;
+  padding-bottom: 20px;
 }
 .application{
   position: relative;
@@ -1490,6 +1491,58 @@ padding-top: 5px;
 .app-card:hover{
 box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
 cursor: pointer;
+}
+@media only screen and (min-width : 1025px) and (max-width : 1366px) {
+  .applications{
+    padding : 10px 0px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255)); */
+  }
+  .application{
+    position: relative;
+    width: 98%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+  }
+  .appliaction{
+    font-size: 1.1vw;
+    font-size: 1rem;
+  }
+  .app-card{
+    display: block;
+    width:28%;
+    margin: 20px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 5px 5px  20px rgba(0, 0, 0, 0.25);
+  }
+  .app-content{
+    color: black;
+  }
+  .app-content h3{
+    padding-bottom: 5px;
+    color: #004cfc;
+  }
+  .app-img img{
+    width: 100%;
+    height: 300px;
+    max-height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .app-card:hover{
+  box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  }
 }
 @media only screen and (min-width : 641px) and (max-width : 1024px) {
 .applications{
@@ -1625,217 +1678,17 @@ cursor: pointer;
   cursor: pointer;
   }
 }
-/* application section ends */
-/* platform section starts */
-.platforms{
-  width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0px;
-    max-width: 1400px;
-  background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255));
-}
-.platform-main{
-  width: 92%;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-}
-.platform-card{
-  width: 100%;
-  margin: 20px;
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #fff;
-  border-radius: 25px;
-  box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
-}
-.platform-content{
-  color: black;
-  width: 100%;
-  font-size: 1.1vw;
-}
-.platform-content h3{
-  padding: 10px;
-  padding-bottom: 10px;
-  color: #004cfc;
-  font-size: 2vw;
-}
-.platform-content p{
-  font-size: 1.1vw;
-  font-size: 1rem;
-}
-.platform-img img{
-  width: 20%;
-  height: 20%;
-  max-height: 300px;
-  float: left;
-  margin-right: 30px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-.platform-card:hover{
-box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
-cursor: pointer;
-}
-/* platforms cards */
-.platform{
-  width: 95%;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-}
-.platform-cards{
-  width:47%;
-  background-color: #fff;
-  border-radius: 25px;
-  margin: 20px 0px;
-  padding: 10px;
-  box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
-  margin-left: auto;
-  margin-right: auto;
-}
-.platforms-content{
-  color:black;
-  width: 100%;
-  font-size: 1.1vw;
-  padding-top: 5px;
-}
-.platforms-content h3{
-  padding: 5px;
-  padding-bottom: 1px;
-  color: #004cfc;
-}
-.platforms-content p{
-  padding: 5px;
-}
-.platforms-img img{
-  width: 50%;
-  height: 20%;
-  float: left;
-  margin-right: 10px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-.platforms-card:hover{
-box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
-}
-.platforms-content{
-  font-size: 1rem;
-}
-@media only screen and (max-width: 800px) {
-
-  .platforms{
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255));
-    padding-bottom: 15px;
-  }
-  .platform-main{
-    width: 100%;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255));
-  }
-
-  .platform-card{
-    width: 93%;
-    margin: 20px;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fff;
-    border-radius: 25px;
-    box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
-  }
-  .platform-content{
-    color: black;
-    width: 100%;
-    font-size: 3vw;
-  }
-  .platform-content h3{
-    padding: 0px;
-    padding-bottom: 10px;
-    color: #004cfc;
-    font-size: 4.5vw;
-  }
-  .platform-content p{
-    font-size: 3.5vw;
-  }
-  .platform-img img{
-    width: 100%;
-    height: 20%;
-    max-height: 300px;
-    float: left;
-    margin-right: 30px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  .platform-card:hover{
-  box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  }
-  .platform{
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255));
-  }
-  .platform-cards{
-    width: 93%;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fff;
-    border-radius: 25px;
-    box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
-  }
-  .platforms-content{
-    color: black;
-    width: 100%;
-    font-size: 1rem;
-  }
-  .platforms-content h3{
-    padding-bottom: 10px;
-    color: #004cfc;
-  }
-  .platforms-content p{
-    font-size: 1rem;
-  }
-  .platforms-img img{
-    width: 100%;
-    height: 20%;
-    max-height: 300px;
-    float: left;
-    margin-right: 5px;
-    border-radius: 10px;
-    margin-bottom: 5px;
-  }
-  .platform-cards:hover{
-  box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  }
-}
-/* platform section ends */
-
+/* APPLICATION SECTION ENDS */
 /* PRODUCT SECTION STARTS*/
 .productss{
-    margin-left:auto;
-    margin-right: auto;
+margin-left:auto;
+margin-right: auto;
 }
 .products-page{
   width: 94%;
   display: flex;
   margin-left: auto;
-  padding-top: 20px;
+  padding-top: 0px;
   margin-right: auto;
 }
 .product{
@@ -1854,22 +1707,28 @@ box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
 }
 .product-img{
 width: 50%;
+height: 100%;
+}
+.product-img img{
+  width:90%;
+  height: 100%;
+  padding:45px 0px;
+vertical-align: middle;
 }
 .product-img1{
   width: 45%;
+  height: 97%;
 }
 .product-img1 img{
 padding:0px 0px;
-  width:80%;
+  width:90%;
+  height: 100%;
+    padding:5px 0px;
 }
 .product-des{
 width: 50%;
   padding:10px;
   font-size: 1rem;
-}
-.product-img img{
-  width:90%;
-  padding:25px 0px;
 }
 .product-des h5{
   padding-bottom: 10px;
@@ -1878,8 +1737,8 @@ width: 50%;
 }
 @media only screen and (min-width : 641px) and (max-width : 1024px) {
   .productss{
-      margin-left:auto;
-      margin-right: auto;
+    margin-left:auto;
+    margin-right: auto;
   }
   .products-page{
     width: 95%;
@@ -1979,8 +1838,8 @@ width: 50%;
     margin-right: auto;
   }
   .product-img1 img{
-  padding:0px 50px;
-    width:100%;
+  padding:0px 20px;
+    width:10%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1996,10 +1855,31 @@ width: 50%;
   }
 }
 /* product section ends */
-/* contact section starts */
+/* PLATFORM SECTION STARTS */
+.platform{
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
 
+}
+.platform-img{
+  width:40%;
+  border-radius: 20px;
+}
+.platform-img img{
+  width:90%;
+  border-radius: 20px;
+}
+.platform-content{
+  width: 50%;
+}
+
+/* PLATFORM SECTION ENDS */
+
+/* contact section starts */
 .contact-section{
-padding-top: 40px;
+padding-top: 20px;
 padding-bottom: 20px;
 /* background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255)); */
 margin-top: 0px;
@@ -2008,7 +1888,7 @@ margin-right: auto;
 }
 .contact{
 width: 92%;
-margin-top: 40px;
+margin-top: 0px;
 background-color: #fff;
 font-size: 1.3vw;
 font-size: 1rem;
@@ -2096,6 +1976,39 @@ padding: 20px 20px;
   width: 100%;
   height: 80%;
   padding-top: 25px;
+}
+#status{
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+  margin: 0  auto;
+  color: white;
+}
+#status.success {
+  border-radius: 20px;
+  background-color: #288733;
+  animation: status 4s ease forwards;
+  margin-top: 10px;
+}
+#status.error {
+    margin-top: 10px;
+    border-radius: 20px;
+  background-color: #BD2019;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 input{

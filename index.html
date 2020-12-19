@@ -68,16 +68,18 @@
       <div class="modal-content-form">
         <div class="contact-form">
           <span class="close-form">&times;</span>
-          <h4>Contact Form</h4>
-          <form class="info" action="index.html" method="post">
+          <h4>Interested in Koollog? Get in touch!</h4>
+          <form class="info" id="my-form" action="https://formspree.io/f/xvovweea" method="POST">
             <input class="fname" type="text" name="name" placeholder="Full name*">
             <input type="email" name="email" placeholder="Email*">
             <input type="tel" name="tel" placeholder="Mobile number*">
             <input type="text" name="name" placeholder="subject">
-            <textarea rows="3" placeholder="Message..." cols="50" name="comment" form="usrform"></textarea>
-            <input class="send-msg"type="button" name="Send message" value="Send message">
+            <textarea rows="3" placeholder="Message..." cols="50" name="message"></textarea>
+            <!-- <input class="send-msg"type="submit" name="Send message" value="Send message"> -->
+            <button class="send-msg" type="submit" name="button">Send message</button>
           </form>
         </div>
+        <div id="status"></div>
       </div>
     </div>
 <!-- HOME SECTION ENDS -->
@@ -86,7 +88,8 @@
       <div data-aos="zoom-in-down" class="about-koollog" id="aboutus">
           <div class="koollog-webapp">
           <!-- <a href="#"></a>  <iframe width="600px" height="450px" src="https://www.youtube.com/embed/pEGqQkRfpak?autoplay=1&mute=1&control=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media;clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <img src="./aboutk1.svg" alt="">
+            <!-- <img src="./aboutk1.svg" alt=""> -->
+            <img src="./monitoringtemp.png" alt="">
           </div>
           <div class="aboutus">
             <h2>About Koollog</h2>
@@ -127,7 +130,7 @@
   <div class="why" data-aos="flip-left">
     <h4>Your Challenges</h4>
     <!-- <img class="why-img" src="./challenges 1.svg" alt=""> -->
-    <img class="why-img" src="./challenge2.jpg" alt="">
+    <img class="why-img" src="./challenge4.jpg" alt="">
     <p>You are expected to:</p>
     <ul>
       <li>Log temperatures of all types of equipment</li>
@@ -208,6 +211,29 @@
             </div>
         </div>
       </div>
+      <div class="features">
+        <div class="feature" data-aos="zoom-in-up">
+            <div class="feature-img">
+              <img src="./Group 59.png" alt="">
+            </div>
+            <div class="feature-des">
+                <img src="" alt="">
+                <h4>Monitoring and Logging Continuously</h4>
+                <p>The Koollog Cloud offers peace of mind and data assurance. As a monitoring system, the Koollog Cloud allows for instant access to real-time data in the palm of your hand. As a logging solution, recorded data is buffered and saved to the device’s internal memory. This provides uninterrupted continuous monitoring even in the event of a power loss or network failure. When services are restored, all recorded data is transmitted automatically and saved to the file database, providing worry-free around the clock data logging.</p>
+            </div>
+        </div>
+      <div class="feature" data-aos="zoom-in-up">
+          <div class="feature-img1">
+            <img src="./Group 65.png" alt="">
+          </div>
+          <div class="feature-des1">
+            <img src="" alt="">
+            <h4>Set up what matters to you</h4>
+            <p>Define your own critical ranges so your sensors can alert when things aren’t right. Set up notifications that trigger as soon as the sensor detects changes that are out of the normal range for peace of mind, all the time. Choose whether you want to be notified by email or a mobile SMS.</p>
+          </div>
+      </div>
+    </div>
+
 
 <!-- FEATURES SECTION ENDS-->
 <!--APPLICATION SECTION STARTS-->
@@ -248,7 +274,7 @@
     <div class="application" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine" >
         <div class="app-card">
           <div class="app-img">
-            <img src="./industry.jpg" alt="">
+            <img src="./industry2.png" alt="">
           </div>
           <div class="app-content">
             <h3>INDUSTRIES</h3>
@@ -275,69 +301,7 @@
         </div>
       </div>
     </div>
-    <!-- APPLICATION SECTION ENDS -->
-    <!-- PLATFORM SECTION STARTS -->
-    <!-- <div class="platforms" id="platforms">
-        <h2 class="title">Platform</h2>
-          <div class="platform-main">
-            <div class="platform-card">
-                  <div class="platform-img">
-                    <img src="./platform.jpg" alt="">
-                  </div>
-                  <div class="platform-content">
-                    <h3>Cloud Platform</h3>
-                    <p>The Koollog Cloud hosted data logging platform provides continuous logging and monitoring of temperature, pressure, humidity data and more while giving users instant access from any location. With Koollog Cloud Services, a wireless data logger system can securely transmit data in real-time to be viewed on any internet or data-enabled devices such as a computer, tablet or mobile device.</p>
-                  </div>
-            </div>
-          </div>
-
-      <div class="platform">
-        <div class="platform-cards">
-            <div class="platforms-img">
-              <img src="./scaleable1.png" alt="">
-            </div>
-            <div class="platforms-content">
-              <h3>Scalable Solution with Limitless Applications</h3>
-              <p>With Koollog Cloud Services, overseeing operations at any time from anywhere becomes the new standard. This system is dynamically designed to perfectly fit applications requiring anywhere from a single data logger to networks of hundreds of loggers in multiple locations.
-                Koollog Data Loggers are cloud-ready and can be up and running in just minutes. Unlike many other custom cloud data logging solutions, the Koollog Cloud Services platform offers a production ready “out of the box” solution.</p>
-            </div>
-        </div>
-
-        <div class="platform-cards">
-            <div class="platforms-img">
-              <img src="./monitoring.jpg" alt="">
-            </div>
-            <div class="platforms-content">
-              <h3>Monitoring and Logging Continuously</h3>
-              <p>The Koollog Cloud offers peace of mind and data assurance. As a monitoring system, the Koollog Cloud allows for instant access to real-time data in the palm of your hand. As a logging solution, recorded data is buffered and saved to the device’s internal memory. This provides uninterrupted continuous monitoring even in the event of a power loss or network failure. When services are restored, all recorded data is transmitted automatically and saved to the file database, providing worry-free around the clock data logging.</p>
-            </div>
-        </div>
-      </div>
-      <div class="platform">
-        <div class="platform-cards">
-            <div class="platforms-img">
-              <img src="./accessdata.jpg" alt="">
-            </div>
-            <div class="platforms-content">
-              <h3>Access Data Instantly and Securely from Anywhere in the World</h3>
-              <p>Because all data is saved to the cloud, data can be made available for viewing from any internet enabled location around the world. Global data security can be controlled and configured to allow and restrict access as desired per user. For more restrictive access needs due to regulation concerns, optional in-house network packages are available to contain data access within a facility, campus or intranet.</p>
-            </div>
-        </div>
-
-        <div class="platform-cards">
-            <div class="platforms-img">
-              <img src="./sms.jpg" alt="">
-            </div>
-            <div class="platforms-content">
-              <h3>Email & SMS Event Alert Notifications</h3>
-              <p>The Koollog Cloud platform allows users to configure event alerts to custom fit their needs. Notifications can be sent via email or SMS the moment a threshold is exceeded. Notifications are also available on screen upon login.For any business that requires time sensitive response to temperature, humidity fluctuations, Koollog provides the tools and technology to continuously monitor around the clock with confidence.</p>
-            </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- platform section ends -->
-
-
+  <!-- APPLICATION SECTION ENDS -->
   <!--PRODUCTS SECTION STARTS -->
     <div class="productss" id="products">
     <h3 class="title">Products</h3>
@@ -406,7 +370,21 @@
         </div>
     </div>
 </div>
-    <!--PRODUCT SECTION ENDS-->
+<!--PRODUCT SECTION ENDS-->
+<!-- PLATFOM SECTION STARTS -->
+    <div class="platform">
+        <div class="platform-content">
+          <div class="">
+            <h3>connect straight into KOOLLOG</h3>
+            <p>Get accurate, real-time temperature and humidity readings straight to your phone or desktop in iAuditor. Right out of the box, our sensors have been configured to work seamlessly within iAuditor, connecting automatically when you set them up so you can build the workflows you need.</p>
+          </div>
+        </div>
+        <div class="platform-img">
+          <!-- <img src="./guide.png" alt=""> -->
+          <img src="./appmockup.png" alt="">
+        </div>
+    </div>
+<!-- PLATFOM SECTION ENDS-->
     <!-- CONTACT SECTION STARTS -->
     <div class="contact-section" id="contact">
       <h2 class="title">Contact</h2>
