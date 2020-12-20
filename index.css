@@ -22,61 +22,59 @@ background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%
 }
 /* FONT SIZES */
 @media only screen and (min-width : 320px) and (max-width :640px) {
-/* HOME */
-body{
+    /* HOME */
+    body{
 
+    }
+    }
+    .home h4{
+      font-size: 3vh;
+    }
+    .home p{
+      font-size: 1.8vh;
+    }
+    header{
+      font-size: 3vw;
+    }
+    .cta{
+      font-size: 3vw;
+    }
+    /* ABOUT */
+    .about{
+      font-size: 3.5vw;
+    }
+    .about h4{
+      font-size: 3.3vw;
+    }
+    /* WHY */
+    .whykoollog{
+      font-size: 3.5vw;
+    }
+    .features{
+    font-size: 3.5vw;
+    }
+    .application{
+    font-size: 3.5vw;
+    }
+    .application h3{
+    font-size: 4vw;
+    }
+    .productss{
+      font-size: 3.5vw;
+    }
+    .productss h5{
+      font-size: 3.5vw;
+    }
+    .platform{
+      font-size: 3.5vw;
+    }
+    .contact-section{
+      font-size: 3.5vw;
+    }
 }
-}
-.home h4{
-  font-size: 3vh;
-}
-.home p{
-  font-size: 1.8vh;
-}
-header{
-  font-size: 3vw;
-}
-.cta{
-  font-size: 3vw;
-}
-/* ABOUT */
-.about{
-  font-size: 3.5vw;
-}
-.about h4{
-  font-size: 3.3vw;
-}
-/* WHY */
-.whykoollog{
-  font-size: 3.5vw;
-}
-.features{
-font-size: 3.5vw;
-}
-.application{
-font-size: 3.5vw;
-}
-.application h3{
-font-size: 4vw;
-}
-.productss{
-  font-size: 3.5vw;
-}
-.productss h5{
-  font-size: 3.5vw;
-}
-.platform{
-  font-size: 3.5vw;
-}
-.contact-section{
-  font-size: 3.5vw;
-}
-}
-
 @media only screen and (min-width : 641px) and (max-width : 1024px) {
   body{
 
-  }
   }
   .home h4{
     font-size: 4vh;
