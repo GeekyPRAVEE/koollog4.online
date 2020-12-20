@@ -671,8 +671,8 @@ iframe{
     font-weight: 500;
     width: 100%;
     color:black;
-    padding:50px 10px;
-    margin-top: 0px;
+    padding:0px 10px;
+    margin-top: 15%;
     margin-bottom: 0px;
     height: 100vh;
     max-height: 800px;
