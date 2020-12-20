@@ -86,7 +86,7 @@ background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%
     font-size: 2vw;
   }
   .cta{
-    font-size: 2vw;
+    font-size: 1vw;
   }
   /* ABOUT */
   .about{
@@ -123,6 +123,50 @@ background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%
 }
 @media only screen and (min-width : 1025px) and (max-width : 1366px) {
   body{
+
+  }
+  .home h4{
+    font-size: 4vh;
+  }
+  .home p{
+    font-size: 2.5vh;
+  }
+  header{
+    font-size: 1.3vw;
+  }
+  .cta{
+    font-size: 1vw;
+  }
+  /* ABOUT */
+  .about{
+    font-size: 1rem;
+  }
+  .about h4{
+    font-size: 1rem;
+  }
+  /* WHY */
+  .whykoollog{
+    font-size: 1rem;
+  }
+  .features{
+  font-size: 1rem
+  }
+  .application{
+  font-size: 1rem;
+  }
+  .application h3{
+  font-size: 1rem;
+  }
+  .productss{
+    font-size: 1rem;
+  }
+  .productss h5{
+    font-size: 1.2vw;
+  }
+  .platform{
+    font-size: 1rem;
+  }
+  .contact-section{
     font-size: 1rem;
   }
 }
