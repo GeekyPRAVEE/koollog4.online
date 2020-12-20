@@ -79,13 +79,13 @@ font-size: 4vw;
   }
   }
   .home h4{
-    font-size: 5vh;
+    font-size: 4vh;
   }
   .home p{
-    font-size: 3vh;
+    font-size: 2.5vh;
   }
   header{
-    font-size: 1rem;
+    font-size: 2vw;
   }
   .cta{
     font-size: 1vw;
@@ -1188,7 +1188,7 @@ width: 100%;
   }
   .why h4{
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     color: #004cfc;
   }
   .why p{
@@ -1276,7 +1276,8 @@ padding: 20px 20px;
     display: block;
   }
   .feature h4{
-    padding: 10px 0px;
+    padding: 0px 0px;
+    padding-bottom: 3px;
     color: #004cfc;
     font-weight: 700;
   }
