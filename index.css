@@ -831,14 +831,14 @@ iframe{
     transition: all 0.3s ease 0s;
   }
   .home-content h2{
-  padding: 5px 0px;
+  padding: 3px 0px;
   margin-left: auto;
   margin-top: 5px;
   margin-right: auto;
   }
   .home-content h4{
     padding-top: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   margin-top: 0px;
   margin-left: 0px;
   color: #fff;
@@ -847,7 +847,7 @@ iframe{
   padding: 0px 0px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   }
   .home-img{
     width:100vw;
