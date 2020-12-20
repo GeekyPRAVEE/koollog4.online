@@ -88,7 +88,7 @@ font-size: 4vw;
     font-size: 2vw;
   }
   .cta{
-    font-size: 1vw;
+    font-size: 2vw;
   }
   /* ABOUT */
   .about{
@@ -293,7 +293,7 @@ transform: matrix(1, 0, 0, -1, 0, 0);
     margin-right: auto;
     padding: 0px 0px;
     padding-top: 5px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -711,7 +711,7 @@ iframe{
    float: inherit;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 20px;
+   margin-top: 5px;
   }
   .modal {
     display: none; /* Hidden by default */
