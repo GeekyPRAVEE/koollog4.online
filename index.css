@@ -1397,7 +1397,8 @@ padding: 20px 20px;
     padding-bottom: 5px;
   }
   .feature h4{
-  padding: 10px 0px;
+  padding: 0px 0px;
+  padding-bottom: 5px;
     color: #004cfc;
     font-weight: 700;
   }
@@ -2145,6 +2146,7 @@ textarea:focus{
   margin-left: 0;
   width: 100%;
   padding: 30px;
+  padding-top: 0px;
   display: block;
   text-align: center;
   }
