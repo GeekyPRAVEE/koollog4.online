@@ -32,6 +32,9 @@ body{
 .home p{
   font-size: 1.8vh;
 }
+header{
+  font-size: 3vw;
+}
 }
 .loading-spinner {
 position: absolute;
@@ -721,11 +724,12 @@ iframe{
   }
   .home-img img{
    width: 95vw;
-   height: 45vh;
+   height: 40vh;
    float: inherit;
    margin-left: auto;
    margin-right: auto;
    margin-top: 0px;
+   margin-bottom: 20px;
   }
   .modal {
     display: none; /* Hidden by default */
