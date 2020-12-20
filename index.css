@@ -24,7 +24,7 @@ background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%
 @media only screen and (min-width : 320px) and (max-width :640px) {
 /* HOME */
 body{
-  font-size: 10px;
+
 }
 }
 .home h4{
@@ -41,7 +41,11 @@ header{
 }
 /* ABOUT */
 .about{
-  font-size: 0.6rem;
+  font-size: 3vw;
+}
+/* WHY */
+.why{
+  font-size: 3vw;
 }
 }
 .loading-spinner {
