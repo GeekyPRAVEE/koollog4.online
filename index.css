@@ -126,10 +126,10 @@ background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%
 
   }
   .home h4{
-    font-size: 4vh;
+    font-size: 2.5vw;
   }
   .home p{
-    font-size: 2.5vh;
+    font-size: 1.5vw;
   }
   header{
     font-size: 1.3vw;
@@ -2001,7 +2001,7 @@ margin-right: auto;
 width: 92%;
 margin-top: 0px;
 background-color: #fff;
-padding-bottom: 10px;
+padding-bottom: 0px;
 margin-left: auto;
 margin-right: auto;
 border-radius: 25px;
@@ -2013,11 +2013,11 @@ color:#FF6F00;
 padding-bottom: 10px;
 }
 .address{
-width: 50%;
-margin-left: 5%;
-padding: 20px 40px;
+width: 31%;
+margin-left: 10px;
+padding: 20px 20px;
 display: block;
-margin-right: 30px;
+margin-right: 0px;
 justify-content:  center;
 }
 .address img{
@@ -2026,12 +2026,12 @@ justify-content:  center;
   margin-right: 10px;
 }
 .address-info{
-padding: 20px 20px;
+padding: 10px 10px;
 width: 100%;
 display: flex;
 }
 .email{
-padding: 20px 20px;
+padding: 10px 10px;
 width: 100%;
 display: flex;
 }
@@ -2074,15 +2074,27 @@ display: flex;
   padding: 10px 0px;
 }
 .contact-img{
-margin-left: 20px;
+margin-left: 0px;
 float: left;
-width: 60%;
-padding: 20px 20px;
+width: 35%;
+height: 45%;
+padding: 50px 10px;
 }
 .contact-img img{
   width: 100%;
+  height: 100%;
+  padding-top: 0px;
+}
+.map{
+  float: right;
+  width: 35%;
   height: 80%;
-  padding-top: 25px;
+  padding: 20px 20px;
+}
+.map iframe{
+  width: 97%;
+  height: 330px;
+  border-radius: 20px;
 }
 #status{
   text-align: center;
@@ -2165,6 +2177,13 @@ textarea:focus{
   box-shadow: 5px 5px  10px rgba(0, 0, 0, 0.25);
 }
 @media only screen and (min-width : 320px) and (max-width :640px){
+  .map{
+    float: right;
+    width: 35%;
+    height: 80%;
+    display: none;
+    padding: 20px 20px;
+  }
   .contact-section{
   padding-top: 10px;
   padding-bottom: 20px;
@@ -2189,7 +2208,7 @@ textarea:focus{
   .address{
   margin-left: 0;
   width: 100%;
-  padding: 30px;
+  padding: 30px ;
   padding-top: 0px;
   display: block;
   text-align: center;
