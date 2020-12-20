@@ -35,6 +35,9 @@ body{
 header{
   font-size: 3vw;
 }
+.cta{
+  font-size: 3vw;
+}
 }
 .loading-spinner {
 position: absolute;
