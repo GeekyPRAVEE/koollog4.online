@@ -41,17 +41,17 @@ header{
 }
 /* ABOUT */
 .about{
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 .about h4{
   font-size: 3.3vw;
 }
 /* WHY */
 .whykoollog{
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 .features{
-font-size: 3vw;
+font-size: 3.5vw;
 }
 .application{
 font-size: 3.5vw;
@@ -60,16 +60,16 @@ font-size: 3.5vw;
 font-size: 4vw;
 }
 .productss{
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 .productss h5{
   font-size: 3.5vw;
 }
 .platform{
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 .contact-section{
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 }
 .loading-spinner {
