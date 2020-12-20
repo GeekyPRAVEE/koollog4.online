@@ -26,6 +26,9 @@ background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%
 body{
   font-size: 0.7rem;
 }
+h4{
+  font-size: 1.5rem;
+}
 }
 .loading-spinner {
 position: absolute;
@@ -368,7 +371,7 @@ transform: matrix(1, 0, 0, -1, 0, 0);
   margin-top: 23vh;
   vertical-align: middle;
 }
-.home-content h1{
+.home-content h2{
 font-weight: bolder;
 padding: 5px 0px;
 margin-top: 80px;
@@ -494,7 +497,7 @@ iframe{
     margin-top: 15%;
     vertical-align: middle;
   }
-  .home-content h1{
+  .home-content h2{
   font-weight: bolder;
   padding: 5px 0px;
   margin-top: 80px;
@@ -580,7 +583,7 @@ iframe{
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
-  .home-content h1{
+  .home-content h2{
   padding: 5px 0px;
   margin-left: auto;
   margin-top: 5px;
@@ -686,7 +689,7 @@ iframe{
     cursor: pointer;
     transition: all 0.3s ease 0s;
   }
-  .home-content h1{
+  .home-content h2{
   padding: 5px 0px;
   margin-left: auto;
   margin-top: 5px;
