@@ -70,6 +70,9 @@ font-size: 1vw;
 }
 @media only screen and (min-width : 320px) and (max-width :640px) {
     /* HOME */
+    .title{
+      font-size: 4vw;
+    }
     body{
 
     }
