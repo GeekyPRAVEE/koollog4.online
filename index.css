@@ -18,7 +18,7 @@ margin-left: auto;
 margin-right: auto;
 padding: 0;
 background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%);
-background : linear-gradient(to right, rgb(0, 145, 255), rgb(0, 217, 255));
+/* background : linear-gradient(to right, rgb(0, 145, 255), rgb(0, 217, 255)); */
 }
 /* FONT SIZES */
 .home h4{
