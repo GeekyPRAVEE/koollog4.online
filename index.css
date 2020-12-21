@@ -21,12 +21,59 @@ background: linear-gradient(90deg, rgba(0,116,189,1) 0%, rgba(65,166,246,1) 100%
 /* background : linear-gradient(to right, rgb(0, 217, 255), rgb(0, 145, 255)); */
 }
 /* FONT SIZES */
+.home h4{
+  font-size: 2.5vw;
+}
+.home p{
+  font-size: 1.5vw;
+}
+header{
+  font-size: 1vw;
+}
+.cta{
+  font-size: 1vw;
+}
+/* ABOUT */
+.about{
+  font-size: 1vw;
+}
+.about h4{
+  font-size: 1vw;
+}
+/* WHY */
+.whykoollog{
+  font-size: 1vw;
+}
+.features{
+font-size: 1vw;
+}
+.application{
+font-size: 1vw;
+}
+.application h3{
+font-size: 1vw;
+}
+.productss{
+  font-size: 1vw;
+}
+.productss h5{
+  font-size: 1.2vw;
+}
+.platform{
+  font-size: 1vw;
+}
+.contact-section{
+  font-size: 1vw;
+}
+.title{
+  font-size: 1.5vw;
+}
 @media only screen and (min-width : 320px) and (max-width :640px) {
     /* HOME */
     body{
 
     }
-    }
+
     .home h4{
       font-size: 3vh;
     }
@@ -243,6 +290,8 @@ header {
 }
 .logo {
   margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 .logo img{
   width: 270px;
@@ -291,6 +340,38 @@ transform: matrix(1, 0, 0, -1, 0, 0);
   box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 20px rgba(255, 111, 0, 0.5);
   transform: matrix(1, 0, 0, -1, 0, 0);
+}
+@media only screen and (min-width : 1023px) and (max-width : 1366px) {
+  .top-nav ul li img{
+    width:35px;
+    height: 35px;
+    border-radius: 100px;
+  }
+  .login{
+  width: 100px;
+  height: 35px;
+  position: absolute;
+  right: 3%;
+  }
+  .login img{
+    float: right;
+    width: 20px;
+  }
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #fff;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 10px 2px #ccc;
+    width: 100%;
+    padding:0px 3%;
+    position: fixed;
+    top:38px;
+    z-index: 999;
+  }
 }
 @media only screen and (min-width : 641px) and (max-width : 1022px) {
   .cta{
@@ -380,7 +461,7 @@ transform: matrix(1, 0, 0, -1, 0, 0);
   width: 90px;
   height: 30px;
   position: absolute;
-  left: 75%;
+  right: 3%;
   }
   .login img{
     float: right;
@@ -535,6 +616,7 @@ color: #ECECEC;
   width: 45vw;
   float: right;
   margin-top: 7%;
+
 }
 .home-img img{
   float: right;
@@ -679,12 +761,15 @@ iframe{
     margin-top: 8%;
     height: 100%;
     vertical-align: middle;
+
   }
   .home-img img{
     float: right;
     width: 100%;
     height: 75vh;
     margin-right: 10px;
+    display: flex;
+    align-items: center;
     }
 }
 @media only screen and (min-width : 641px) and (max-width : 1024px) and (orientation:portrait) {
@@ -951,7 +1036,6 @@ float: left;
 }
 .aboutus h2{
   padding-bottom: 10px;
-  padding-bottom: 20px;
   color: #004cfc;
 }
 .aboutus p{
@@ -1266,6 +1350,7 @@ width: 100%;
 }
 .feature{
 width :48%;
+height: 100%;
 display: flex;
 margin-left: auto;
 margin-right: auto;
@@ -1277,37 +1362,45 @@ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 .feature-img{
   width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .feature-img img{
   width: 100%;
-   max-width: 500px;
-  max-height: 450px;
+  height: 100%;
   float: left;
   padding: 20px;
+  padding-right: 0px;
   margin-left: 0px;
 }
 .feature-des{
+height: 95%;
 width: 55%;
 float: right;
-padding: 20px 20px;
+padding: 0px 20px;
 position: relative;
 }
 .feature-img1 {
   width: 50%;
+  height: 95%;
   float: right;
 }
 .feature-img1 img{
   width: 100%;
+  height:100%;
   padding: 20px;
    float: right;
+   padding-right: 0px;
   margin-right: 0px;
-  max-width: 500px;
- max-height: 450px;
+ display: flex;
+ align-items: center;
 }
 .feature-des1{
   width: 55%;
+  height: 95%;
   float: left;
-padding: 20px 20px;
+padding: 0px 20px;
 }
 @media only screen and (min-width : 1025px) and (max-width : 1366px) {
   .features{
@@ -1336,6 +1429,7 @@ padding: 20px 20px;
   }
   .feature-img {
     width: 45%;
+    float: left;
   }
   .feature-img img{
     width: 100%;
@@ -1343,7 +1437,7 @@ padding: 20px 20px;
     max-height: 450px;
     float: left;
     padding: 20px;
-    margin-left: 5%;
+    margin-left: 10px;
   }
   .feature-des{
   width: 50%;
@@ -1541,7 +1635,7 @@ padding: 20px 20px;
   color: black;
 }
 .app-content h3{
-  padding-bottom: 10px;
+  padding-bottom: 3px;
   color: #004cfc;
 }
 .app-img img{
@@ -1782,8 +1876,14 @@ padding:0px 0px;
 width: 50%;
   padding:10px;
 }
+.product-des ul{
+list-style-type:none;
+}
+.product-des ul span{
+font-weight: 700;
+}
 .product-des h5{
-  padding-bottom: 10px;
+  padding-bottom: 3px;
   color: #004cfc;
 }
 @media only screen and (min-width : 641px) and (max-width : 1024px) {
@@ -1908,6 +2008,7 @@ width: 50%;
   display: flex;
   background-color: #fff;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 .platform-img{
   width:40%;
@@ -1921,6 +2022,7 @@ width: 50%;
 .platform-content{
   width: 60%;
   padding: 30px;
+  align-items: center;
 }
 .devices{
   width: 100%;
@@ -2078,7 +2180,7 @@ margin-left: 0px;
 float: left;
 width: 35%;
 height: 45%;
-padding: 50px 10px;
+padding: 20px 10px;
 }
 .contact-img img{
   width: 100%;
@@ -2087,9 +2189,10 @@ padding: 50px 10px;
 }
 .map{
   float: right;
-  width: 35%;
+  width: 32%;
   height: 80%;
   padding: 20px 20px;
+  margin-left: auto;
 }
 .map iframe{
   width: 97%;
