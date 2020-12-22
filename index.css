@@ -2407,11 +2407,11 @@ textarea:focus{
     padding-top: 25px;
   }
   .contact-form{
-    width: 90%;
+    width: 93%;
     min-width: 250px;
     background-color:#F8F8F8;
     color: black;
-    padding: 20px;
+    padding: 15px;
     margin: 0px 30px;
     margin-left: auto;
     margin-right: auto;
@@ -2446,7 +2446,7 @@ textarea:focus{
   }
   .send-msg{
     background-color:#ec2121;
-    padding: 10px;
+    padding: 5px 10px;
     margin-top: 20px;
     border-radius: 20px;
     color: #fff;
