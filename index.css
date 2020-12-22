@@ -495,6 +495,7 @@ header {
     transition: all 0.3s ease 0s;
     padding: 5px 5px;
     float: right;
+    font-weight: 500;
     text-align: center;
   }
   .menu {
@@ -522,7 +523,7 @@ header {
     width: 100%;
     padding: 0px 10px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -538,19 +539,18 @@ header {
       padding:0px 0px;
       position: fixed;
       z-index: 999;
-      top:0px;
+      top:30px;
       display: block;
       box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.25);
   }
   .top-nav{
     width: 100%;
-    display: none;
-    position: fixed;
+   position: fixed;
     padding: 0px 3%;
     z-index: 999;
   }
   .top-nav ul{
-
+    width: 50%;
   }
   .top-nav ul li{
     display: inline;
@@ -565,7 +565,7 @@ header {
   width: 90px;
   height: 30px;
   position: absolute;
-  left: 75%;
+right:5px;
   }
   .login img{
     float: right;
