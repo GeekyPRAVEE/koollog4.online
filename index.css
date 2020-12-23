@@ -968,8 +968,8 @@ iframe{
    float: inherit;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 0px;
-   margin-bottom: 20px;
+   margin-top: 20px;
+   margin-bottom: 15px;
   }
   .modal {
     display: none; /* Hidden by default */
